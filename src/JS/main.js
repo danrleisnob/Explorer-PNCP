@@ -21,7 +21,7 @@ function login() {
     exibirMensagemSucesso(mensagem);
     window.location.href = "explorer.html";
   } else {
-    exibirMensagemErro("Credenciais inválidas. Por favor, tente novamente.");
+    exibirMensagemErro.alert("Credenciais inválidas. Por favor, tente novamente.");
   }
 }
 
