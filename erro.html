@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="./img/speed.png" type="image/x-icon">
+  <link rel="stylesheet" href="./src/CSS/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="icon" href="./src/img/logo bw.PNG" type="image/x-icon">
+  <script src="./src/JS/select.js"></script>
+  <title>Explorer PNCP</title>
+
+</head>
+
+<body>
+  <div class="logo">
+      <div class="header__brand">
+        <a href="explorer.html">
+          <img class="brand__logo" src="./src/img/logo explorer black1.PNG" alt="" srcset="Logo Danrlei">
+        </a>
+        </div>
+
+      <div class="header_toggle">
+          <i id="toggletheme" class="bi bi-sun"></i>
+      </div>
+
+  </div>
+
+  <div class="bar"></div>
+
+  <div class="content">
+    <div class="sidebar">
+      <menu>
+        <p><strong>Veja também:</strong></p>
+        <details>
+          <summary>Erros</summary>
+          <ol id="errosList">
+            <li><a href="#" onclick="showErrorText('erroValidacao')">API Compras Dados Abertos atigas – PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('erroCertificado')">Atualização cadastral - PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('insercao')">Envio da Inserção da contratação – PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('Oportunidades')">Erro ao baixar arquivo na Aba Historico no painel do pncp OPS PÁGINA NÃO ENCONTRADA -  PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('cod')">Não recebeu o Código de Verificação de Duas Etapas</a></li>
+            <li><a href="#" onclick="showErrorText('diretaorgao')">Erro ao tentar divulgar contratação direta cadastrar cargo – PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('naoautorizada')">OPERAÇÃO NÃO AUTORIZADA. SOMENTE O USUÁRIO QUE PUBLICOU A CONTRATAÇÃO PODE ANEXAR DOCUMENTO À MESMA – PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('naoaparece')">Órgão não aparece no filtro Unidades – PNCP</a></li>
+          
+          </ol>
+        </details>
+
+        <details>
+          <summary>Comercial</summary>
+          <ol id="errosList">
+            <li><a href="#" onclick="showErrorText('erroface')">Dúvida Regime Jurídico – PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('acessoproducao')">Solicitação de acesso ambiente de produção – PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('erroCentral')">Código da Contratação Futura - PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('acessonegado')">Dúvida sobre preenchimento de data de encerramento - PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('dispensaeletronica')">Esclarecimento quanto ao Sigilo do Valor Dispensa eletrônica – PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('indeferimento')">Indeferimento – PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('preencherlicitacao')">Indicar como deve ser feita uma licitação – PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('maiorlance')">Maior Lance – PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('exoneracao')">Solicitação de acesso em casos de Exoneração – PNCP</a></li>
+
+          </ol>
+        </details>
+
+      </menu>
+    </div>
+
+    <!-- campo textos scripts que os colaboradores devem usar atrelado ao menu-->
+
+    <main class="main">
+      <!--erro-->
+      <div id="erroValidacao" style="display: none;">
+
+        <h1>OPERAÇÃO NÃO AUTORIZADA. SOMENTE O USUÁRIO QUE PUBLICOU A CONTRATAÇÃO PODE ANEXAR DOCUMENTO À MESMA – PNCP</h1>
+        <h2>Situação</h2>
+
+        Quando um sistema inicia a contratação ou licitação só o mesmo conseguirá altera-lo ou inserir informações nele.
+        
+        <h2>Quando Ocorre?</h2>
+
+        Sem acessos aos sistemas:
+        
+        <h2>Deve certifica.</h2>
+
+        Se quem está fazendo essa afirmação de fato é um servidor.
+
+        <h2>Solução sugerida</h2>
+   
+        últilizar as credenciais iniciais para continuar a contratação
+
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezado(a),<br>
+
+          Gostaria de trazer um esclarecimento importante em relação aos usuários no PNCP (Plano Nacional de Contratações Públicas).<br>
+          
+          É comum que ocorra alguma confusão ao falarmos sobre usuários no contexto do PNCP, pois não estamos acostumados a considerar máquinas como usuários. No entanto, no PNCP, o termo usuário refere-se a portais ou sistemas, não a indivíduos.<br>
+          
+          Por exemplo, quando nos referimos a um usuário Compras, estamos nos referindo a um conjunto de credenciais de login e senha que são utilizados pelo sistema Compras para interagir com o PNCP. O mesmo princípio se aplica a outros sistemas ou portais, como o BB ou qualquer outro sistema.<br>
+          
+          É importante destacar que, quando o sistema Compras envia uma contratação para o PNCP, somente o próprio sistema Compras tem autorização para realizar alterações nessa contratação.<br>
+          
+          Espero que este esclarecimento ajude a dissipar quaisquer dúvidas ou confusões em relação aos usuários no PNCP. Se houver mais alguma questão, não hesite em entrar em contato.<br>
+          
+          Atenciosamente,<br>
+          Equipe PNCP.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes)<br>
+
+        <h3>Palavras-chave</h3>
+        Erro| Divulgação | outro usuário<br>
+        
+        <h3>Referências</h3>
+        4670409
+      </div>
+
+      <div id="naoaparece" style="display: none;">
+
+        <h1>Órgão não aparece no filtro Unidades – PNCP</h1>
+        <h2>Situação</h2>
+
+        Quando o usuário tenta filtrar o seu órgão e o mesmo não aparece.        
+        <h2>Quando Ocorre?</h2>
+
+        No painel do PNCP existem campos de filtros
+        
+        <h2>Deve certifica.</h2>
+
+        Se quem está fazendo essa afirmação de fato é um servidor.
+
+        <h2>Solução sugerida</h2>
+   
+        as opções disponíveis nos filtros são ajustadas conforme os registros retornados no resultado à direita. Da mesma forma, se uma pesquisa for realizada por meio de uma palavra-chave, o resultado será atualizado e todas as opções de filtros estarão baseadas nesse novo conjunto de resultados<br>
+
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezado(a),<br>
+
+          Gostaríamos de informar que em nossa página existem dois elementos de "listas de pesquisa": um localizado acima e outro na lateral esquerda.<br>
+          
+          Caso seja realizada uma busca pelo tribunal na barra superior e, posteriormente, seja efetuada uma nova busca utilizando os filtros laterais, o tribunal em questão será exibido.<br>
+          
+          Em outras palavras, as opções disponíveis nos filtros são ajustadas conforme os registros retornados no resultado à direita. Da mesma forma, se uma pesquisa for realizada por meio de uma palavra-chave, o resultado será atualizado e todas as opções de filtros estarão baseadas nesse novo conjunto de resultados.<br>
+          
+          Gostaríamos de salientar que esta é uma peculiaridade da implementação atual que está prevista para ser melhorada ou corrigida em próximas evoluções do sistema.<br>
+          
+          Agradecemos sua compreensão e estamos à disposição para quaisquer esclarecimentos adicionais.<br>
+          
+          Atenciosamente,<br>
+          Equipe PNCP.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes)<br>
+
+        <h3>Palavras-chave</h3>
+        filtro| PNCP | Pesquisa<br>
+        
+        <h3>Referências</h3>
+        5943650
+      </div>
+
+      <div id="erroValidacao" style="display: none;">
+
+        <h1>API Compras Dados Abertos atigas – PNCP</h1>
+        <h2>Situação</h2>
+
+        O usuário está tentando acessar algum endpoint realicionado a API de dados abertos antigas do compras, orientar o mesmo a atualizar para nova API
+        
+        <h2>Quando Ocorre?</h2>
+
+        Pesquias
+        
+        <h2>Deve certifica.</h2>
+
+        Se quem está fazendo essa afirmação de fato é um servidor.
+
+        <h2>Solução sugerida</h2>
+   
+        a API de compras de dados abertos passou por uma atualização, visando melhorar a qualidade e a entrega dos dados.<br>
+        Também informamos que na nossa nova atualização esses problemas já foram corrigidos.<br>
+        Para se manter atualizado, sugerimos que assista ao nosso webinar, disponível em: https://www.youtube.com/watch?v=xWDpPf-bprA, postado no dia 9 de outubro de 2023. Nele, você encontrará informações essenciais sobre como prosseguir com o acesso à nossa<br>
+
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezado(a),<br>
+        
+        Agradecemos pelo seu chamado. Gostaríamos de informar que, a API de compras de dados abertos passou por uma atualização, visando melhorar a qualidade e a entrega dos dados.<br>
+        Também informamos que na nossa nova atualização esses problemas já foram corrigidos.<br>
+        Para se manter atualizado, sugerimos que assista ao nosso webinar, disponível em: https://www.youtube.com/watch?v=xWDpPf-bprA, postado no dia 9 de outubro de 2023. Nele, você encontrará informações essenciais sobre como prosseguir com o acesso à nossa nova API.<br>
+        
+        Atenciosamente,<br>
+        Equipe PNCP.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes N3 )<br>
+
+        <h3>Palavras-chave</h3>
+        API | Dúvida | dados | Antigos<br>
+        
+        <h3>Referências</h3>
+        4322225
+
+      </div>
+
+      <div id="erroCertificado" style="display: none;">
+        <h1>Atualização de dados – PNCP</h1>
+        <h2>Situação</h2>
+
+        Usuário deseja realizar atualização de dados PNCP        
+        <h2>Quando Ocorre?</h2>
+
+        (E-mail, Senha, nome)          
+        <h2>Deve certifica.</h2>
+
+        Qual o tipo de dados que o usuário está querendo alterar.
+        <h2>Solução sugerida</h2>
+   
+        Acessar o manual
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezado(a),<br>
+
+          Informamos que para obter detalhes sobre a utilização das plataformas, recomendamos acessar o link https://www.gov.br/pncp/pt-br/pncp/integre-se-ao-pncp/manual-de-integracao/ManualdeIntegraoPNCPVerso2.2.8.pdf. Para a sua demanda específica, orientamos a consulta ao sumário, mais precisamente no item  6.1. Serviços de Usuário e 6.1.1. Atualizar Usuário. Solicitamos atenção especial à leitura minuciosa do manual, pois todas as orientações necessárias estão detalhadas no referido documento.<br>
+          
+          Destacamos que procedimentos não contemplados no "Manual de Integração PNCP - Portal Nacional de Contratações Públicas" não poderão ser realizados.<br>
+          
+          Recomendamos, ainda, que esteja atualizado quanto às notícias e informações divulgadas no Portal Nacional de Contratações Públicas - PNCP, disponíveis no site oficial do Ministério da Gestão e da Inovação em Serviços Públicos - MGI, acessível por meio de gov.br/pncp/ (https://www.gov.br/pncp/pt-br).<br>
+          
+          Permanecemos à disposição para qualquer esclarecimento adicional.<br>
+          
+          Atenciosamente,<br>
+          Equipe de Suporte Técnico.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes )<br>
+
+        <h3>Palavras-chave</h3>
+        Atualização | Cadastro | Alterar | Dados<br>
+        
+        <h3>Referências</h3>
+        3392463
+      </div>
+
+      
+      <div id="insercao" style="display: none;">
+        <h2>Envio da Inserção da contratação – PNCP</h2>
+        <h2>Situação</h2>
+
+        Ao tentar enviar uma licitação com mais de 5000 itens, recebo uma mensagem de erro no campo itensCompra indicando Lista de itens inválida. Após uma análise junto à equipe de desenvolvimento, identificamos que o PNCP recebe apenas o envio de 2000 itens por vez, mas essa informação não está documentada.  
+        <h2>Quando Ocorre?</h2>
+        para a possibilidade de remover essa restrição. Caso não seja possível, gostaríamos de saber se precisamos ajustar o processo de envio em nosso sistema, uma vez que estamos tentando enviar mais de 5000 itens de uma só vez na inclusão da compra.
+        Sem acessos aos sistemas:    
+        <h2>Deve certifica.</h2>
+
+        Se quem está fazendo essa afirmação de fato é um servidor ou administrador de sistema.
+        <h2>Solução sugerida</h2>
+   
+        serviços "Inserir Contratação" e "Inserir Item de Contratação" possuem uma limitação de 2000 itens. Estaremos atualizando a documentação de requisitos e incluindo esta informação no manual correspondente.
+ 
+Essa limitação foi estabelecida visando preservar a qualidade dos dados e evitar a perda de pacotes de dados. É importante ressaltar que esta restrição não impede o envio de todos os itens desejados. Basta dividir a lista em segmentos de até 2000 itens cada.
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezado(a),<br>
+ 
+          Gostaríamos de informar que os serviços "Inserir Contratação" e "Inserir Item de Contratação" possuem uma limitação de 2000 itens. Estaremos atualizando a documentação de requisitos e incluindo esta informação no manual correspondente.<br>
+           
+          Essa limitação foi estabelecida visando preservar a qualidade dos dados e evitar a perda de pacotes de dados. É importante ressaltar que esta restrição não impede o envio de todos os itens desejados. Basta dividir a lista em segmentos de até 2000 itens cada.<br>
+           
+          Estamos à disposição para quaisquer dúvidas adicionais.<br>
+           
+          Atenciosamente,<br>
+          Equipe PNCP.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes)<br>
+
+        <h3>Palavras-chave</h3>
+        Erro | 2000 itens<br>
+        
+        <h3>Referências</h3>
+        5723478</p>
+      </div>
+      <div id="cod" style="display: none;">
+        <h2>Erro ao baixar arquivo na Aba Historico no painel do pncp OPS PÁGINA NÃO ENCONTRADA -  PNCP</h2>
+        <h2>Situação</h2>
+
+        Ao tentar baixar o arquivo o mesmo vai para uma página não encontrata OPS PÁGINA NÃO ENCONTRADA
+        <h2>Quando Ocorre?</h2>
+        Quando faz o download
+       
+        <h2>Deve certifica.</h2>
+
+        Se quem está fazendo essa afirmação de fato é um servidor ou administrador de sistema.
+        <h2>Solução sugerida</h2>
+        Entendemos que você está enfrentando dificuldades relacionadas a este problema e gostaríamos de oferecer nossa assistência. Para facilitar sua experiência e ajudá-lo a contornar este desafio, informamos que o documento necessário pode ser baixado na aba "ARQUIVOS". Esperamos que esta alternativa possa ajudá-lo temporariamente até que uma solução permanente seja implementada.
+
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezado(a),<br>
+
+          Espero que esta mensagem o encontre bem.<br>
+          
+          Gostaríamos de chamar sua atenção para um problema recorrente que identificamos em nosso sistema, o qual, lamentavelmente, persiste sem solução devido à falta de priorização adequada. Reconhecemos a importância de resolver esse problema e estamos comprometidos em dedicar os recursos necessários para sua resolução.<br>
+          
+          Entendemos que você está enfrentando dificuldades relacionadas a este problema e gostaríamos de oferecer nossa assistência. Para facilitar sua experiência e ajudá-lo a contornar este desafio, informamos que o documento necessário pode ser baixado na aba "ARQUIVOS". Esperamos que esta alternativa possa ajudá-lo temporariamente até que uma solução permanente seja implementada.<br>
+          
+          É importante destacar que estamos empenhados em aprimorar constantemente nosso sistema para oferecer a você uma experiência cada vez melhor. Acreditamos firmemente na importância da evolução contínua e valorizamos imensamente sua opinião e feedback durante esse processo.<br>
+          
+          Por favor, saiba que sua opinião é essencial para nós. Estamos ansiosos para receber suas sugestões, comentários e críticas construtivas, pois elas nos ajudarão a identificar áreas de melhoria e priorizar nossos esforços de desenvolvimento de forma mais eficaz.<br>
+          
+          Agradecemos sinceramente sua paciência e compreensão enquanto trabalhamos para resolver este problema. Se precisar de qualquer assistência adicional ou se tiver alguma dúvida, não hesite em entrar em contato conosco. Estamos aqui para ajudar.<br>
+          
+          Atenciosamente,<br>
+          Equipe PNCP.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes)<br>
+
+        <h3>Palavras-chave</h3>
+        Ambiente | Produção<br>
+        
+        <h3>Referências</h3>
+        6060857</p>
+      </div>
+
+      <div id="diretaorgao" style="display: none;">
+        <h2>Erro ao tentar divulgar contratação direta cadastrar cargo – PNCP</h2>
+        <h2>Situação</h2>
+
+        Usuário deseja divulgar contratação direta e aparece a crítica Para o tipo de contratação cadastrada, é necessário cadastrar os cargos: Responsável pela contratação direta e Autoridade competente
+        <h2>Quando Ocorre?</h2>
+        (Quando usuário não cadastra o cargo antes de abrir a divulgação do contrato) 
+       
+        <h2>Deve certifica.</h2>
+
+        Que antes de abrir a divulgação seja realizada minuciosamente todas os passos.
+        <h2>Solução sugerida</h2>
+        Cadastrar os cargos e depois tentar novamente
+
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezado Xxxxx ,<br>
+          O erro "Para o tipo de contratação cadastrada, é necessário cadastrar os cargos: Responsável pela contratação direta e Autoridade competente" ocorre quando o órgão ou entidade responsável pelo processo de contratação não cadastrou os cargos de Responsável pela contratação direta e Autoridade competente no PNCP.<br>
+           
+          Para corrigir esse erro, o órgão ou entidade deve acessar o PNCP e cadastrar os cargos de Responsável pela contratação direta e Autoridade competente.<br>
+          Para cadastrar os cargos, siga os passos a seguir:<br>
+          0 - Acesse o Portal Nacional de Contratações Públicas (PNCP) no endereço https://pncp.gov.br/: https://pncp.gov.br/.<br>
+          1 - Clique em "Acessar".<br>
+          2 - Faça login com seu usuário e senha.<br>
+          3 - Clique em "Cargos".<br>
+          4 - Clique em "Novo cargo".<br>
+          5 - Preencha os campos obrigatórios, incluindo o nome do cargo, a descrição do cargo e o órgão ou entidade ao qual o cargo está vinculado.<br>
+          6 - Clique em "Salvar".<br>
+          Após cadastrar os cargos, o órgão ou entidade deve selecioná-los no momento da divulgação do processo de contratação.<br>
+          Para selecionar os cargos, siga os passos a seguir:<br>
+          0 - Acesse o Portal Nacional de Contratações Públicas (PNCP) no endereço https://pncp.gov.br/: https://pncp.gov.br/.<br>
+          1 - Clique em "Acessar".<br>
+          2 - Faça login com seu usuário e senha.<br>
+          3 - Clique em "Novo Processo".<br>
+          4 - Selecione o tipo de licitação ou contratação que será realizada.<br>
+          5 - Preencha as informações necessárias.<br>
+          6 - Na seção "Responsáveis", selecione os cargos de Responsável pela contratação direta e Autoridade competente.<br>
+          7 - Clique em "Publicar".<br>
+          Após publicar o processo, o órgão ou entidade deve manter as informações atualizadas, conforme as alterações que ocorrerem no processo.<br>
+          Recomendamos que acompanhe as notícias e atualizações fornecidas no Portal Nacional de Contratações Públicas - PNCP, no site oficial do Ministério da Gestão e da Inovação em Serviços Públicos - MGI, acessível em gov.br/pncp/ (https://www.gov.br/pncp/pt-br).<br>
+          Atenciosamente,<br>
+          Equipe suporte técnico.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes N1)<br>
+
+        <h3>Palavras-chave</h3>
+        Cadastrar cargo| Erro | Divulgação <br>
+        
+        <h3>Referências</h3>
+        Cadastrar cargo| Erro | Divulgação </p>
+      </div>
+
+      
+
+      <!--erro-->
+      <!--Bloqueio-->
+
+      <div id="acessoproducao" style="display: none;">
+        <h2>Solicitação de acesso ambiente de produção – PNCP</h2>
+        <h2>Situação</h2>
+        Usuário deseja acesso e credenciais para o ambiente de produção PNCP
+
+        <h2>Quando Ocorre?</h2>
+
+        Antes de subir o chamado verificar se o usuário cumpriu todos os requesitos. ATENÇÃO: Não serão atendidas solicitações que não estejam de acordo com os requisitos listados.    
+        <h2>Deve certifica.</h2>
+
+        Realizar todas as otientações descritas na FAQ 19. do Perguntas e resposta do Portal PNCP
+        <h2>Solução sugerida</h2>
+   
+        Sugerimos que os campos dataVigenciaInicio (Data de início de vigência do contrato) e datavigenciaFim (Data do término da vigência do contrato) sejam opcionais para que a integração atenda o cenário dos contratos que dependem de Ordem de Início.<br>
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezado,<br>
+
+          Informamos que, para obter acesso ao ambiente de produção, é crucial seguir todas as determinações conforme descritas no FAQ 19 disponível em: https://www.gov.br/pncp/pt-br/pncp/perguntas-e-respostas.<br>
+           
+          19. Como e quando solicitar as credenciais de acesso ao Ambiente de Produção (integração de sistemas) do PNCP?<br>
+          .A solicitação de credenciais para acesso ao Ambiente de Produção o PNCP é realizado exclusivamente por meio do Portal de Serviços do Ministério da Gestão e Inovação em Serviços Públicos – MGI:<br>
+          .Portal de Atendimento<br>
+          .Caso seja o primeiro acesso, realizar o cadastro aqui. <br>
+          .Somente um portal/sistema já credenciado junto ao Ambiente de Treinamento do PNCP poderá realizar esta solicitação (mais informações sobre como obter acesso ao ambiente de treinamento, clique em Cadastre-se.<br>
+          .Ao abrir um registro no Portal de Serviços do MGI, favor inserir as seguintes informações:<br>
+          Nº ID do portal/sistema do ambiente de treinamento;<br>
+          Nº CNPJ cadastrado; e
+          Razão social do portal/sistema credenciado.<br>
+          
+          .O acesso ao Ambiente de Produção do PNCP será disponibilizado ao portal/sistema após análise, pela equipe técnica do PNCP, dos testes realizados em ambiente de Treinamento do PNCP.<br>
+          .Abaixo, seguem orientações, com os respectivos exemplos, para a realização dos testes necessários (lista exemplificativa):<br>
+          Nota: Informar os links dos testes realizados ao abrir uma solicitação no Portal de Serviços do MGI<br>
+           • Inclusão de ao menos uma contratação<br>
+          - Favor informar o(s) link(s) que evidencie a compra inserida no PNCP, vide Exemplo envio de contratação<br>
+          • Inclusão de ao menos um resultado dos itens de uma contratação.
+          - Favor informar o(s) link(s) que evidencie o resultado da compra inserida no PNCP, vide Exemplo resultado<br>
+          • Inclusão de ao menos uma ata de registro de preço<br>
+          - Favor informar o(s) link(s) que evidenciem a ata inserida no PNCP, vide Exemplo ata<br>
+          • Recomenda-se que sejam utilizados os serviços de retificação da contratação, do resultado e de atas para a realização de um teste mais completo da aplicação. <br> 
+          • Caso o Portal/Sistema seja responsável pela gestão de Planos de Contratação Anual - PCA e Contratos, é necessário que sejam realizadas simulações que envolvam a inclusão/retificação/exclusão de PCA’s e Contratos, conforme parâmetros descritos no Manual de Integração do PNCP.<br>
+                 O envio dos links serve com uma “prova de conceito” para que a equipe técnica do PNCP possa avaliar se o Portal/Sistema realizou as integrações necessárias em Ambiente de Treinamento. Após análise, casos os testes estejam corretos, as credenciais de acesso ao Ambiente de Produção do PNCP serão enviadas para os responsáveis do portal/sistema cadastrados na base de dados do PNCP.<br>
+             ATENÇÃO: Não serão atendidas solicitações que não estejam de acordo com os requisitos listados acima.<br>
+          Ao nos fornecer todas essas informações, serão geradas as suas credenciais, as quais serão enviadas a você.<br>
+          
+          Recomendamos que acompanhe as notícias e atualizações fornecidas no Portal Nacional de Contratações Públicas - PNCP, no site oficial do Ministério da Gestão e da Inovação em Serviços Públicos - MGI, acessível em gov.br/pncp/ (https://www.gov.br/pncp/pt-br).<br>
+          
+          Atenciosamente,<br>
+          Equipe suporte técnico.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes )<br>
+
+        <h3>Palavras-chave</h3>
+        Ambiente | Produção <br>
+        
+        <h3>Referências</h3>
+        3346144
+      </div>
+
+      <div id="exoneracao" style="display: none;">
+        <h2>Solicitação de acesso em casos de Exoneração – PNCP</h2>
+        <h2>Situação</h2>
+
+        O antigo resposável pelo PNPC foi exonerado do cargo e levou consigo todos os acessos as credenciais do PNPC.
+       <h2>Quando Ocorre?</h2>
+
+       Sem acessos aos sistemas:    
+        <h2>Deve certifica.</h2>
+
+        Se quem está fazendo essa afirmação de fato é um servidor.
+        <h2>Solução sugerida</h2>
+   
+        Para Solicitação de novas credenciais é necessário ter o oficil do fato ocorrido
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezada(a),<br>
+
+          Favor enviar um oficío ao MGI, formalizando o pedido de alteração de responsável de legal pelo sistema de compras em questão.
+          https://www.gov.br/pt-br/servicos/protocolar-documentos-junto-ao-ministerio-da-gestao-e-da-inovacao-em-servicos-publicos
+          Agradecemos o contato,<br>
+          
+          Atenciosamente,<br>
+          Equipe de Suporte Técnico.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes )<br>
+
+        <h3>Palavras-chave</h3>
+        Ambiente | Produção | certificado <br>
+        
+        <h3>Referências</h3>
+        4670409
+      </div>
+
+      <div id="acessonegado" style="display: none;">
+        <h2>Dúvida sobre preenchimento de data de encerramento - PNCP</h2>
+        <h2>Situação</h2>
+
+        Usuário questiona sobre o preenchimento de datas de obrigatórias na API porém desnecessárias e não funcionais     
+        <h2>Quando Ocorre?</h2>
+
+        (antes do recebimento da Ordem de Início não é possível inferir as datas de início e término e, em vista disso, enviamos para o PNCP os campos dataVigenciaInicio e datavigenciaFim sem valor (endpoint /v1/orgaos/{cnpj}/contratos). Atualmente o manual de integração exige o preenchimento desses campos e por isso nossa integração é negada com a seguinte mensagem:
+        {nomeCampo:dataVigenciaFim,mensagem:Data do fim da vigência do contrato não informada.},{nomeCampo:dataVigenciaInicio,mensagem:Data do início da vigência do contrato não informada.}
+        )      
+        <h2>Deve certifica.</h2>
+
+        Que o usuário esteja previamente cadastrado com as credenciais corretas
+        <h2>Solução sugerida</h2>
+   
+        Sugerimos que os campos dataVigenciaInicio (Data de início de vigência do contrato) e datavigenciaFim (Data do término da vigência do contrato) sejam opcionais para que a integração atenda o cenário dos contratos que dependem de Ordem de Início.
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezado(a),<br>
+          Estamos cientes de que, no momento, o leiaute do PNCP exige o preenchimento obrigatório da data de encerramento de propostas. Este é um aspecto do sistema que ainda não foi totalmente alinhado para refletir adequadamente as disposições da lei, e estamos trabalhando ativamente para revisar e atualizar este ponto.<br>
+          Enquanto essa adequação não é finalizada, nossa orientação é que, ao publicar editais de pré-qualificação, utilize uma data de encerramento bem distante, por exemplo, o ano de 2099. Isso deverá permitir que o edital seja aceito pelo sistema, indicando simbolicamente a natureza indeterminada do prazo de recebimento de propostas.<br>
+          Reforçamos nosso compromisso em aperfeiçoar o sistema para que, nas próximas atualizações, essa característica seja corrigida e alinhada com a legislação atual.<br>
+          Agradecemos muito sua compreensão e paciência durante esse processo. Estamos sempre à disposição para mais esclarecimentos e ajuda."<br>
+          Recomendamos, ainda, que esteja atualizado quanto às notícias e informações divulgadas no Portal Nacional de Contratações Públicas - PNCP, disponíveis no site oficial do Ministério da Gestão e da Inovação em Serviços Públicos - MGI, acessível por meio de gov.br/pncp/ (https://www.gov.br/pncp/pt-br). Permanecemos à disposição para qualquer esclarecimento adicional.<br> 
+          Atenciosamente, <br>
+          Equipe de Suporte Técnico.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes )<br>
+
+        <h3>Palavras-chave</h3>
+        Ambiente | Produção | certificado <br>
+        
+        <h3>Referências</h3>
+        4549083
+      </div>
+      <div id="erroCentral" style="display: none;">
+        <h1>Código da Contratação Futura - PNCP</h1>
+        <h2>Situação</h2>
+
+        Preenchimento de dados      
+        <h2>Quando Ocorre?</h2>
+
+        ( Dúvidas sobre campos)       
+        <h2>Deve certifica.</h2>
+
+        
+        <h2>Solução sugerida</h2>
+   
+        Orientações
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezado(a),<br>
+
+          Este campo não é obrigatório, caso seu sitema não utilize esse tipo de dado, não precisa enviar para o PNCP, adicionalmente a descrição do campo no manual de integração 'Código da Contratação Futura', o qual se refere pode variar para cada sistema.<br>
+          
+          No caso de utilizar sistema próprio qual seria o número correto a ser informado? Resposta: A escolha é uma decisão discrionária de cada sistema.<br>
+          
+          Atenciosamente,<br>
+          Equipe Suporte Técnico.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes )<br>
+
+        <h3>Palavras-chave</h3>
+        Ambiente | Produção | certificado <br>
+        
+        <h3>Referências</h3>
+        4549083
+      </div>
+
+      <div id="erroface" style="display: none;">
+        <h1>Dúvida Regime Jurídico – PNCP</h1>
+        <h2>Situação</h2>
+
+        Dúvida Regime Jurídico.   
+        <h2>Quando Ocorre?</h2>
+
+        Sem acessos aos sistemas:    
+        <h2>Deve certifica.</h2>
+
+        Se quem está fazendo essa afirmação de fato é um servidor.
+        <h2>Solução sugerida</h2>
+   
+        Orientações
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezado(a),
+          Não há uma regra/restrição referente a "Regime Jurídico" para credenciamento ao PNCP.<br>
+          Assim, trago esclarecimento sobre quem deve realizar o credenciamento junto ao PNCP, conforme FAQ (Perguntas e Respostas — Portal Nacional de Contratações Públicas - PNCP (www.gov.br))<br>
+          "07. Quem deve realizar o credenciamento junto ao PNCP?<br>
+          Somente Portais ou Sistemas de contratações públicas (privados ou públicos). Recomenda-se que a unidade de Tecnologia da Informação de órgãos públicos solicite o credenciamento por meio do link - https://www.gov.br/pncp/pt-br/integre-se-ao-pncp/cadastre-se. Para realizar a solicitação, é obrigatório que tenha o login único do Gov.Br.<br>
+          Sugere-se que o responsável indicado na solicitação de credenciamento seja um servidor/profissional que irá atuar no processo de integração entre o sistema e o PNCP. Serão gerados somente um login e senha para o portal/sistema, ou seja, não serão criadas credenciais específicas para cada servidor/profissional do órgão ou empresa responsável pelo sistema de contratações que atuará na integração entre sistema e PNCP.<br>
+          Ademais, é importante reforçar que o acesso aos dados de contratações publicados no PNCP é público e universal, ou seja, não necessita de login e senha de acesso para visualizar as informações disponíveis no Portal."<br>
+          
+          Ressalta-se, ainda, que, para acesso a dados, tem-se, além do portal, uma ampla gama de APIs disponibilizadas e documentadas nos manuais: Manuais — Portal Nacional de Contratações Públicas - PNCP (www.gov.br)<br>
+          
+          Por fim, destaco que "Somente Portais ou Sistemas de contratações públicas (privados ou públicos)" precisam realizar credenciamento envio de dados sobre contratações públicas e pedimos desculpas pelo lapso entre o questionamento e a resposta.<br>
+          Atenciosamente,<br>
+          Equipe PNCP.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes)<br>
+
+        <h3>Palavras-chave</h3>
+        Regime| Dúvida<br>
+        
+        <h3>Referências</h3>
+        4322225</p>
+      </div>
+
+      <div id="dispensaeletronica" style="display: none;">
+        <h1>Esclarecimento quanto ao Sigilo do Valor Dispensa eletrônica – PNCP</h1>
+        <h2>Situação</h2>
+
+        saber qual o meio para que eu possa tornar os valores da minha dispensa SIGILOSO, pois estou notando que as dispensas estão com os valores divulgados, o que eu creio não ser legalmente permitido se há possibilidade de informar onde devo entrar para deixar os valores das dispensas eletronicas em SIGILO.   
+        <h2>Quando Ocorre?</h2>
+
+        Divulgar dispensas.   
+        <h2>Deve certifica.</h2>
+
+        Se quem está fazendo essa afirmação de fato é um servidor.
+        <h2>Solução sugerida</h2>
+   
+        Nas APIs pertinentes, está presente o campo "orcamentoSigiloso", cuja descrição é a seguinte: Este campo identifica se o orçamento é sigiloso. Quando o valor é "true", indica que o orçamento é considerado sigiloso; quando é "false", indica que não é sigiloso. É importante observar que, para contratações na modalidade leilão, esse campo deve ser informado como "false".<br>
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezados,<br>
+
+          Gostaríamos de comunicar que o PNCP está devidamente capacitado para receber e processar informações de caráter sigiloso, conforme os exemplos abaixo:<br>
+          
+          PNCP:<br>
+          
+          orçamentoSigiloso:<br>
+          Nas APIs pertinentes, está presente o campo "orcamentoSigiloso", cuja descrição é a seguinte: Este campo identifica se o orçamento é sigiloso. Quando o valor é "true", indica que o orçamento é considerado sigiloso; quando é "false", indica que não é sigiloso. É importante observar que, para contratações na modalidade leilão, esse campo deve ser informado como "false".<br>
+          
+          orcamentoSigilosoCodigo:<br>
+          Este campo consiste em um código que indica se a compra possui itens com orçamento sigiloso. Os códigos e seus respectivos significados são os seguintes:<br>
+          
+          1: COMPRA_SEM_SIGILO (Compra sem sigilo);<br>
+          2: COMPRA_PARCIALMENTE_SIGILOSA (Compra parcialmente sigilosa);<br>
+          3: COMPRA_TOTALMENTE_SIGILOSA (Compra totalmente sigilosa).<br>
+          Estes exemplos demonstram a preparação do PNCP para lidar com a especificação e tratamento de informações sigilosas relacionadas aos orçamentos em processos de contratação.<br>
+          
+          Porém, é importante ressaltar que o envio dessas informações ao PNCP depende do sistema/portal utilizado pelo seu ente.<br>
+          
+          Em caso de dúvidas adicionais, permanecemos à disposição para esclarecimentos.<br>
+          
+          Atenciosamente,<br>
+          Equipe PNCP.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes N3)<br>
+
+        <h3>Palavras-chave</h3>
+        Sigilo| Dispensa<br>
+        
+        <h3>Referências</h3>
+        5739944</p>
+      
+      </div>
+
+      <div id="indeferimento" style="display: none;">
+        <img src="./img/credencial.png">
+        <h1>Indeferimento – PNCP</h1>
+        <h2>Situação</h2>
+
+        Solicitação de credenciais indeferidas
+        <h2>Quando Ocorre?</h2>
+
+        (credenciais negadas)    
+        <h2>Deve certifica.</h2>
+
+        
+        <h2>Solução sugerida</h2>
+   
+        07. Quem deve realizar o credenciamento junto ao PNCP?
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezada(a),<br>
+
+          Informamos que devem se atentar a quais portais/sistemas precisam de senha de acesso.<br>
+          Orientamos https://www.gov.br/pncp/pt-br/pncp/perguntas-e-respostas FAQ 07. Quem deve realizar o credenciamento junto ao PNCP?<br>
+          Somente Portais ou Sistemas de contratações públicas (privados ou públicos). Recomenda-se que a unidade de Tecnologia da Informação de órgãos públicos solicite o credenciamento por meio do link - https://www.gov.br/pncp/pt-br/integre-se-ao-pncp/cadastre-se. Para realizar a solicitação, é obrigatório que tenha o login único do Gov.Br.<br>
+          Sugere-se que o responsável indicado na solicitação de credenciamento seja um servidor/profissional que irá atuar no processo de integração entre o sistema e o PNCP. Serão gerados somente um login e senha para o portal/sistema, ou seja, não serão criadas credenciais específicas para cada servidor/profissional do órgão ou empresa responsável pelo sistema de contratações que atuará na integração entre sistema e PNCP.<br>
+          Por fim, é importante reforçar que o acesso aos dados de contratações publicados no PNCP é público e universal, ou seja, não necessita de login e senha de acesso para visualizar as informações disponíveis no Portal.
+          
+          Recomendamos, ainda, que esteja atualizado quanto às notícias e informações divulgadas no Portal Nacional de Contratações Públicas - PNCP, disponíveis no site oficial do Ministério da Gestão e da Inovação em Serviços Públicos - MGI, acessível por meio de gov.br/pncp/ (https://www.gov.br/pncp/pt-br). Permanecemos à disposição para qualquer esclarecimento adicional.<br>
+          
+          Atenciosamente,<br>
+          Equipe de Suporte Técnico</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes)<br>
+
+        <h3>Palavras-chave</h3>
+        Ambiente | Produção | certificado <br>
+        
+        <h3>Referências</h3>
+        3678588</p>
+      </div>
+
+      <div id="preencherlicitacao" style="display: none;">
+        <h1>Indicar como deve ser feita uma licitação – PNCP</h1>
+        <h2>Situação</h2>
+
+        Usuário questiona sobre campos que deve colocar para fazer uma contratação ou quer dar sugestões e fazer apontamentos.
+        <h2>Quando Ocorre?</h2>
+
+        Usuário questiona sobre campos que deve colocar para fazer uma contratação ou quer dar sugestões e fazer apontamentos.
+        <h2>Deve certifica.</h2>
+
+        Se quem está fazendo essa afirmação de fato é um servidor.
+        <h2>Solução sugerida</h2>
+   
+        Para Solicitação de novas credenciais é necessário ter o oficil do fato ocorrido
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezado(a),<br>
+          Pedimos desculpas pela demora. Em relação à sua solicitação de orientação sobre o amparo legal a ser utilizado em procedimentos licitatórios, gostaríamos de destacar que, de acordo com as disposições legais pertinentes, a definição do amparo legal, assim como outros aspectos relacionados, é de responsabilidade dos licitantes e depende diretamente da análise detalhada do procedimento licitatório em questão. Nossa instituição não possui autoridade para indicar ou prescrever como deve ser conduzida uma licitação, uma vez que esta é uma prerrogativa exclusiva dos licitantes e das normativas vigentes.<br>
+          No entanto, reconhecendo a importância de proporcionar recursos que facilitem a consulta e compreensão das informações relevantes, temos o prazer de informar sobre a disponibilidade de uma nova forma de acesso às tabelas pertinentes através do Portal Nacional de Contratações Públicas (PNCp), acessível por meio do seguinte endereço: Portal Nacional de Contratações Públicas. Além disso, os interessados podem acessar os dados por meio da interface Swagger UI, disponível no portal PNCp, acessível através do seguinte link: Swagger UI.<br>
+          Por fim, encorajamos os cidadãos a contribuírem com sugestões para aprimoramento das regras de conformidade ou para identificação de eventuais lacunas nos amparos legais existentes. Todas as sugestões recebidas serão cuidadosamente consideradas e estudadas pela nossa equipe. É fundamental que as sugestões sejam embasadas legalmente, a fim de garantir uma análise precisa e fundamentada.<br>
+          Agradecemos sua atenção e colaboração neste processo de melhoria contínua. Ficamos à disposição para quaisquer esclarecimentos adicionais que se façam necessários.<br>
+          Atenciosamente,<br>
+          Equipe PNCP.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes)<br>
+
+        <h3>Palavras-chave</h3>
+        Licitação <br>
+        
+        <h3>Referências</h3>
+        4670409 | 4789029</p>
+      </div>
+
+      <div id="maiorlance" style="display: none;">
+        <h1>Maior Lance – PNCP</h1>
+        <h2>Situação</h2>
+
+        Usuário indar sobre o uso do maior lance ou informar que está em divergencia com a lei.
+        <h2>Quando Ocorre?</h2>
+
+        Dúvida sobre modalidade Maior Lance:
+        <h2>Deve certifica.</h2>
+
+        Se quem está fazendo essa afirmação de fato é um servidor.
+        <h2>Solução sugerida</h2>
+   
+        No manual que está no site do PNCP V.2.2.9, na seção 5.21, na página 29, a informação 'maior lance' como critério de julgamento em concorrência está em divergência com o art.6º da Lei 14.133/2021.
+
+Lei: 14.133/21<br>
+Art. 6º Para os fins desta Lei, consideram-se:<br>
+XXXVIII - concorrência: modalidade de licitação para contratação de bens e serviços especiais e de obras e serviços comuns e especiais de engenharia, cujo critério de julgamento poderá ser:
+
+a) menor preço;<br>
+
+b) melhor técnica ou conteúdo artístico;<br>
+
+c) técnica e preço;<br>
+
+d) maior retorno econômico;<br>
+
+e) maior desconto;<br>
+Manual PNCP: <br>
+Página: 29<br>
+A SEÇÃO 5.21 <br>
+
+Código do Modalidade da Contratação:<br>
+
+4 (Concorrência - Eletrônica)<br>
+5 (Concorrência - Presencial) 5 (Maior lance) <br>
+        <h2>Modelo de Resposta para Chamados</h2>
+        
+        <P>Prezado(a),
+          Considerando a reclamação apresentada por um cidadão, evidencia-se uma incongruência entre o conteúdo do Manual do Plano Nacional de Contratações Públicas (PNCP), versão 2.2.9, especificamente na seção 5.21, página 29, e o estabelecido pela Lei 14.133/2021, artigo 6º. A discordância reside no critério de julgamento para concorrências, onde o manual sugere o uso do "maior lance" em contrapartida aos critérios delineados pela lei, que incluem menor preço, melhor técnica ou conteúdo artístico, técnica e preço, maior retorno econômico, e maior desconto. Esta situação levanta questões sobre a adequação das diretrizes do manual em relação à legislação vigente sobre licitações.<br>
+           
+          A partir desse questionamento, relembramos que a Lei 14.133 “estabelece normas gerais de licitação e contratação para as Administrações Públicas diretas, autárquicas e fundacionais da União, dos Estados, do Distrito Federal e dos Municípios” abrange diversos órgãos.<br>
+          Adicionalmente, destacamos que o Portal Nacional de Contratações Públicas (PNCP) é um sítio eletrônico oficial destinado à divulgação centralizada e obrigatória dos atos exigidos pela mesma Lei 14.133.<br>
+          Considerando a norma em voga traz definições gerais e que as demais unidades da federação tem capacidade subsidiária para legislar sobre o tema, o PNCP deve abarcar todas as possibilidades atinentes a licitações e contratos, em outras palavras, a estrutura das APIs e regras de negócio do PNCP foram desenvolvidos para restringir o mínimo as possibilidades de lançamentos.<br>
+          Ressalvamos que, conforme item 4.2. Manutenção dos Dados das Contratações Enviadas do manual de integração, “é responsabilidade da plataforma do usuário garantir a precisão e a manutenção adequada dos dados enviados para o PNCP, a fim de refletir a realidade das contratações públicas em questão.”<br>
+           
+          Por fim, como exemplos de decisões onde o maior lance é utilizado:<br>
+          
+           
+          “O Acórdão nº 3042/08 - Plenário (Consulta nº 030.658/2008-0) do TCU dispõe que a adoção de critério de julgamento de propostas não previsto na legislação do pregão, do tipo maior valor ofertado para o objeto, somente seria admissível, em princípio, em caráter excepcional, tendo em vista o relevante interesse público da aplicação deste critério alternativo para o atingimento dos objetivos institucionais do ente público e como mecanismo concretizador do princípio licitatório da seleção da oferta mais vantajosa para a administração.<br>
+          O Acórdão nº 2844/2010 - Plenário (Representação nº 011.355/2010 - 7) do TCU estabelece que a licitação na modalidade pregão, com critério de julgamento na maior oferta, não constitui utilização de critério de julgamento não previsto por lei, mas, sim, a utilização do critério legalmente estabelecido e plenamente adequado ao objeto do certame, com a utilização do instrumento legal mais especialmente pertinente para os objetivos da administração.<br>
+          Esse acórdão expressa que há inúmeros precedentes na utilização do pregão para a concessão de áreas públicas por parte de diversos órgãos da administração, como os Tribunais Regionais Federais (Pregão nº 07/08 do TRF da 1ª Região), o Ministério Público Federal (Pregão nº 41/07) e a Procuradoria da República no Distrito Federal (Pregão nº 01/08).<br>
+          O Acórdão nº 1940/2015 - Plenário (Consulta nº 033.466/13) do TCU fixa que, havendo interesse de a administração pública federal promover prévio procedimento licitatório para contratação de prestação de serviços, em caráter exclusivo, de pagamento de remuneração de servidores ativos, inativos e pensionistas e outros serviços similares, com a previsão de contraprestação pecuniária por parte da contratada, deverá a contratante, além de franquear acesso ao certame tanto das instituições financeiras públicas como das privadas, realizar licitação na modalidade pregão, preferencialmente sob forma eletrônica, tendo por base critério "maior preço".<br>
+          O Acórdão nº 478/2016 - Plenário (Representação nº 019.436/2014-9) do TCU expressa que a jurisprudência do Tribunal recomenda a utilização de pregão para a concessão remunerada de uso de bens públicos; e que é plenamente legal a utilização da modalidade pregão para licitação destinada à outorga de concessões de uso de áreas comerciais em aeroportos.<br>
+          O Acórdão nº 2605/18 - Tribunal Pleno do TCE-PR (Consulta nº 800781/17) fixa que o pregão deverá ocorrer, preferencialmente, pela forma eletrônica, devendo ser justificada a sua não adoção.
+          O Acórdão nº 2043/21 - Tribunal Pleno do TCE-PR (Consulta de nº 273240/21) dispõe que deve ser dada preferência às plataformas públicas de licitação, devendo-se justificar a licitação e contratação de plataforma privada em detrimento de plataforma pública; e que, caso a concessão de uso de bem público envolva a fruição de bem imóvel, dependendo do que dispõe a Lei Orgânica do Município ou a Constituição do Estado, ela deve ser precedida de autorização legislativa.”<br>
+          Os conselheiros aprovaram o voto do relator por unanimidade, na Sessão de Plenário Virtual nº 11/23 do Tribunal Pleno do TCE-PR, concluída em 22 de junho. O Acórdão nº 1657/23 - Tribunal Pleno foi disponibilizado em 5 de julho, na edição nº 3.014 do Diário Eletrônico do TCE-PR (DETC). A decisão transitou em julgado no dia 14 de julho.”<br>
+           
+          “FUNDAMENTO PARA UTILIZAÇÃO DAS MODALIDADES CONCORRÊNCIA E DIALÓGO COMPETITIVO:<br>
+                   No tocante a utilização das modalidades de Concorrência e Diálogo Competitivo com critério de julgamento pelo maior desconto, estas modalidades também estão previstas no Inc. II do art. 2º da Lei nº 8.987, de 13 de fevereiro de 1995, que dispõe sobre regime de concessão e permissão e prestação de serviços públicos, que prevê:<br>
+                    Art. 2o Para os fins do disposto nesta Lei, considera-se:<br>
+                I - poder concedente: a União, o Estado, o Distrito Federal ou o Município, em cuja competência se encontre o serviço público, precedido ou não da execução de obra pública, objeto de concessão ou permissão;<br>
+                  II - concessão de serviço público: a delegação de sua prestação, feita pelo poder concedente, mediante licitação, na modalidade concorrência ou diálogo competitivo, a pessoa jurídica ou consórcio de empresas que demonstre capacidade para seu desempenho, por sua conta e risco e por prazo determinado;     (Redação dada pela Lei nº 14.133, de 2021)<br>
+                        III - concessão de serviço público precedida da execução de obra pública: a construção, total ou parcial, conservação, reforma, ampliação ou melhoramento de quaisquer obras de interesse público, delegados pelo poder concedente, mediante licitação, na modalidade concorrência ou diálogo competitivo, a pessoa jurídica ou consórcio de empresas que demonstre capacidade para a sua realização, por sua conta e risco, de forma que o investimento da concessionária seja remunerado e amortizado mediante a exploração do serviço ou da obra por prazo determinado;       (Redação dada pela Lei nº 14.133, de 2021);<br>
+                Iv – (.....)” grifo nosso.<br>
+                     Por sua vez, o Art. 15 da citada Lei de concessão estabelece o critério de julgamento, sendo que de forma expressa existe a previsão de utilização para estes objetos do critério de maior oferta em diversos incisos ou a sua combinação, vejamos:<br>
+           
+          “ Art. 15. No julgamento da licitação será considerado um dos seguintes critérios:                               (Redação dada pela Lei nº 9.648, de 1998)<br>
+                I - o menor valor da tarifa do serviço público a ser prestado;                                   (Redação dada pela Lei nº 9.648, de 1998)<br>
+                II - a maior oferta, nos casos de pagamento ao poder concedente pela outorga da concessão;     (Redação dada pela Lei nº 9.648, de 1998)<br>
+                III - a combinação, dois a dois, dos critérios referidos nos incisos I, II e VII;                           (Redação dada pela Lei nº 9.648, de 1998)<br>
+                IV - melhor proposta técnica, com preço fixado no edital;                            (Incluído pela Lei nº 9.648, de 1998)
+                V - melhor proposta em razão da combinação dos critérios de menor valor da tarifa do serviço público a ser prestado com o de melhor técnica;                         (Incluído pela Lei nº 9.648, de 1998)<br>
+                VI - melhor proposta em razão da combinação dos critérios de maior oferta pela outorga da concessão com o de melhor técnica; ou                            (Incluído pela Lei nº 9.648, de 1998)<br>
+                VII - melhor oferta de pagamento pela outorga após qualificação de propostas técnicas.                                  (Incluído pela Lei nº 9.648, de 1998)<br>
+                § 1o A aplicação do critério previsto no inciso III só será admitida quando previamente estabelecida no edital de licitação, inclusive com regras e fórmulas precisas para avaliação econômico-financeira.                          (Redação dada pela Lei nº 9.648, de 1998)”<br>
+           
+          IV - CONCLUSÃO<br>
+                            Conforme pode-se observar, existe a previsão expressa, estabelecendo a aplicação da Lei nº 14.133/2021 aos casos de concessões e permissões de uso de bens públicos, entretanto não foi instituída qualquer disciplina ou procedimento específico para esses casos.<br>
+                            Por outro lado, na Lei de concessões e permissões de uso de bens públicos adotam o critério de julgamento de maior lance denominado de melhor oferta, para as modalidades de concorrência e diálogo competitivo. Enquanto, para a modalidade denominada Pregão, a Jurisprudência e Doutrina já consolidou a sua utilização com critério de julgamento de maior lance tendo, inclusive, manifestação de Tribunal de Contas quanto a este procedimento.<br>
+                           Por todo exposto, inexiste dúvidas que o critério de julgamento de maior lance poderá ser utilizado quando o objeto for licitado pelas modalidades de Concorrência, diálogo Competitivo ou Pregão. “<br>
+          Atenciosamente,<br>
+          Equipe PNCP.</P><br>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes)<br>
+
+        <h3>Palavras-chave</h3>
+        Maior Lance| Menor preço<br>
+        
+        <h3>Referências</h3>
+        5192133</p>
+      </div>
+
+
+
+      <!--Bloqueio-->
+
+    </main>
+
+
+
+    <div class="anchors">
+      <figure>
+        <a href="https://www.gov.br/pncp/pt-br/acesso-a-informacao/comunicados/comunicado-no-1-2023-portal-nacional-de-contratacoes-publicas-pncp">
+
+          <h4><strong>Fique por dentro!</strong></h4>
+
+
+          <figcaption>Comunicado nº 1/2023 - Portal Nacional de Contratações Públicas (PNCP)</figcaption>
+          <P>O Comitê Gestor da Rede Nacional de Contratações Públicas (CGRNCP), na qualidade de responsável
+              pela gestão do Portal Nacional de Contratações Públicas (PNCP), nos termos do §1º do art. 174 da
+              Lei nº 14.133/2021, comunica...</p>
+          <kbd>Atualizado em 03/03/2024</kbd>
+      </a>
+      </figure>
+    </div>
+  </div>
+  </div>
+
+  <footer>
+    <div class="fot">
+      <p><strong> Centrais de atendimento</strong></p>
+      <li>SIPEC: 0800 978 9009</li>
+      <li>DECIPEX: 0800 978 9004</li>
+      <li>PEN: 0800 978 9005</li>
+      <li>SCDP: 0800 978 9002</li>
+      <li>COMPRAS: 0800 978 9001</li>
+      <li>TransfereGov: 0800 978 9008</li>
+    </div>
+
+    <div class="rede">
+      <strong>Redes Sociais</strong><br>
+      <a href="https://www.linkedin.com/company/speedmais-solu%C3%A7%C3%B5es-ltda/mycompany/" target="_blank"><i
+          class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href="https://www.facebook.com/speedcallcenter/?locale=pt_BR" target="_blank"><i
+          class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/speedmais/" target="_blank"><i
+          class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://www.speedmais.com.br/" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://github.com/danrleisnob" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+    </div>
+  </footer>
+  <script src="./src/JS/toggle.js"></script>
+</body>
+
+</html>

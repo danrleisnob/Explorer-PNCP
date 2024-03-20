@@ -1,0 +1,253 @@
+:root,
+:root[data-theme='dark'] {
+    --primary-color: #000;
+    --toggle-color: #FFF;
+
+    --primary-bg-color: #111217;
+    --secondary-bg-color: #28292E;
+    --primary-border-color: #28292E;
+    --secondary-border-color: #56575A;
+
+    --title-color: #F0F0F0;
+    --text-color: #9A9A9C;
+    --link-color: #9A9A9C;
+    --icon-color: #C7C8C9;
+}
+
+:root[data-theme='light'] {
+    --primary-color: #FFF;
+    --toggle-color: #000;
+
+    --primary-bg-color: #E9E9E9;
+    --secondary-bg-color: #C7C8C9;
+    --primary-border-color: #C7C8C9;
+    --secondary-border-color: #9A9A9C;
+
+    --title-color: #0B080F;
+    --text-color: #28292E;
+    --link-color: #28292E;
+    --icon-color: #56575A;
+}
+
+html[data-theme='light'] .skills__intem {
+    filter: invert(80%)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--title-color);
+}
+
+.header__toggle {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header_toggle{
+  margin-right: 2rem;
+}
+
+#toggletheme {
+  font-size: 1.5rem;
+  color: var(--toggle-color);
+  cursor: pointer;
+  transition: ease-in-out .4s;
+}
+
+h1, h2, h3, h4, p, span {
+  color: var(--title-color);
+}
+
+
+li {
+  color:var(--title-color);   
+}
+
+ul { list-style: none; padding-left: 5px; }
+a { color:var(--title-color); text-decoration: none;}
+
+.bar {
+  background-color: var(--primary-bg-color);
+  padding:0px;
+  align-items: end;
+  justify-content: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.protocolo {
+  display: flex;
+  padding: 0px 300px 0px;
+  height: 0px 400px 0px;
+}
+
+
+.content {
+  background-color: var(--primary-bg-color);
+  max-width: 1440px;
+  margin: auto;
+  grid-gap: 3rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-areas: "sidebar main anchors";
+  grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.anchors {
+  background-color: var(--secondary-bg-color);
+  color: var(--title-color);
+  text-decoration: none;
+  align-items: center;
+
+}
+
+.gestao {
+  align-items: start;
+  width: 70%;
+}
+
+.sidebar {
+  background-color: var(--secondary-bg-color);
+  color: var(--title-color);
+  text-decoration: none;
+}
+
+figure {
+  align-items: center;
+  text-align: center;
+}
+
+
+.botao {
+  display: inline-flex;
+  width: 50%;
+  background: none;
+}
+
+.logo {
+  height: 90PX;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+}
+
+.hist {
+height: 70px;
+align-items: center;
+justify-content: space-between;
+
+}
+.logo img {
+  width: 300px;
+}
+
+.text {
+  width: 150px;
+}
+
+.cad {
+  text-align: right;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+}
+
+.boto {
+  width: 35rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: Segoe UI Black;
+  border-radius: 5%;
+  color: rgb(255, 0, 0);
+  background: rgba(214, 214, 214, 0.473);
+  font-size: 5rem;
+  transition: opacity 1.0s, box-shadow 1.0s;
+  box-shadow: 0 0 30px rgba(202, 201, 250, 0);
+  cursor: pointer;
+}
+
+.bot:hover, .boto:hover {
+  opacity: 3;
+  box-shadow: 0 0 50px rgb(255, 0, 0);
+}
+
+footer {
+  display: flex;
+  position: flex;
+  bottom: 0;
+  margin: 10px auto;
+  padding: 0%;
+  border: 0;
+  letter-spacing: normal;
+  vertical-align: baseline;
+  color: var(--title-color);
+  background-color: var(--primary-bg-color);
+  height: max-content;
+  box-sizing: border-box;
+}
+
+.fot {
+  vertical-align: top;
+  margin: 10px 0px 0px;
+  color: var(--title-color);
+  margin-right: 20px;
+  vertical-align: top;
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+
+.rede {
+  margin: 20px 300px 0px;
+  vertical-align: top;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.rede a {
+  margin-right: 1rem;
+}
+
+.error-text {
+  display: none;
+}
+
+.botao{
+  width: 50px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+
+  font-weight: 500;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+}
+
+.login-btn {
+  color: white;
+  background: var(--primary-gradient);
+}
+.login-btn:hover {
+  opacity: 0.9;
+}

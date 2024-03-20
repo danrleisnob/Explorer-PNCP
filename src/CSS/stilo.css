@@ -1,0 +1,146 @@
+body, html {
+    background-color: #ff5959;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+li {color:rgb(255, 255, 255);   
+}
+ul { list-style: none; padding-left: 5px; }
+a { color:rgb(255, 255, 255); text-decoration: none;}
+
+.bar {
+    background-color: #ff5959;
+    padding:15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+  }
+.content {
+    background-color: #ffffff;
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+.anchors {
+    background: rgb(146, 39, 39);
+    color: rgb(255, 255, 255);
+    border-right: solid 1px #cdcdcd;
+    text-decoration: none;
+
+  }
+.sidebar {
+    background: rgb(146, 39, 39);
+    color: rgb(255, 255, 255);
+    border-right: solid 1px #cdcdcd;
+    text-decoration: none;
+  }
+figure {
+    align-items: center;
+    text-align: center;
+  }
+
+
+.botao {
+    display: inline-flex;
+    width: 50%;
+    background: none;
+  }
+
+
+.logo {
+    height: 90PX;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.hist {
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+
+}
+  .logo img {
+    width: 300px;
+  }
+
+  .text {
+    width: 150px;
+  }
+
+  .cad {
+    text-align: right;
+  }
+
+  main {
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+  }
+
+.bot, .boto {
+    cursor: pointer;
+    display: block;
+    font-weight: 100;
+    font-family: Segoe UI Black;
+    border-radius: 5%;
+    margin: 50px 50px 10px;
+    padding: 50px 100px 200px;
+    box-sizing: border-box;
+    color: rgb(255, 0, 0);
+    background: rgb(214, 214, 214);
+    font-size: 30px;
+    opacity: 0.7;
+    transition: opacity 1.0s, box-shadow 1.0s; /* Adiciona uma transição suave para ambas as propriedades */
+    box-shadow: 0 0 30px rgba(202, 201, 250, 0); /* Define uma sombra inicial transparente */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+  }
+
+.bot:hover, .boto:hover {
+    opacity: 3;
+    box-shadow: 0 0 50px rgb(255, 0, 0); /* Define a sombra com efeito de iluminação ao passar o mouse */
+  }
+
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    margin: 10px auto;
+    padding: 0%;
+    border: 0;
+    letter-spacing: normal;
+    vertical-align: baseline;
+    color: white;
+    background: rgb(146, 39, 39);
+    height: max-content;
+    box-sizing: border-box;
+  }
+
+.fot {
+    vertical-align: top;
+    margin: 10px 0px 0px;
+    color: white;
+    margin-right: 20px;
+    vertical-align: top;
+    margin-right: 20px;
+    color: white;
+    box-sizing: border-box;
+  }
+
+.rede {
+    margin: 20px 300px 0px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.error-text {
+    display: none;
+  }
