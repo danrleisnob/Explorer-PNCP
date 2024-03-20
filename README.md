@@ -1,7 +1,6 @@
 # Explorer PNCP
 
-Olá! Eu sou o Danrlei Souza criado desse cardápil para o bar e restaurante States Boteco uma referencia no bairro de pau amarelo, janga e regiões
-espero que gostem do conteudo e venham programar comigo <3 
+Olá! Sou Danrlei Souza e estou entusiasmado em compartilhar com você o projeto que desenvolvi em resposta às demandas da empresa em que trabalho atualmente. Criei um explorador completo, contendo todos os scripts necessários para os Níveis 1 e 2, consolidando uma base de conhecimento robusta que foi construída ao longo de seis meses. Estes scripts são precisos, didáticos e cuidadosamente selecionados, visando otimizar o tempo de resposta (SLA) em todos os níveis operacionais, resultando em uma entrega de resultados de qualidade superior para nossos clientes. Este recurso não só aumenta a eficiência operacional, mas também eleva a experiência do cliente ao garantir soluções rápidas e eficazes. Estou empolgado em compartilhar esses benefícios com você e espero que nosso explorador de scripts seja uma ferramenta valiosa para o seu negócio.
 
 ## Conecte-se comigo
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/danrleisnob)
