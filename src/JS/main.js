@@ -19,7 +19,7 @@ function login() {
   if (usuarioEncontrado) {
     var mensagem = "Bem-vindo, ao ambiente ExplorerPNCP" + usuarioEncontrado.nome + "!";
     exibirMensagemSucesso(mensagem);
-    window.location.href = "/explorer.html";
+    window.location.href = "explorador.html";
   } else {
     exibirMensagemErro("Credenciais inválidas. Por favor, tente novamente.");
   }
