@@ -5,6 +5,19 @@ Olá! Sou Danrlei Souza e estou entusiasmado em compartilhar com você o projeto
 ## Tela de Loggin
 ![image](https://github.com/danrleisnob/Explorer-PNCP/assets/132399000/b610be6e-d903-4d3f-9435-45723128c5f5)
 
+## Tela principal layout responsivo e interativo.
+![image](https://github.com/danrleisnob/Explorer-PNCP/assets/132399000/4ba05709-ac28-4987-b995-8acf8ed6d34e)
+
+## Theme dark e light
+![image](https://github.com/danrleisnob/Explorer-PNCP/assets/132399000/f7506a5e-69cd-49bd-848d-e9228dbe6a66)
+
+## tela de scripts layout responsivo e interativo.
+![image](https://github.com/danrleisnob/Explorer-PNCP/assets/132399000/55c5fa3f-cf27-4592-9178-b5c7abd4e1e2)
+
+
+
+
+
 ## Conecte-se comigo
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/danrleisnob)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=0E76A8)](https://br.linkedin.com/in/danrlei-souza)
