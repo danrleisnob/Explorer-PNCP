@@ -1,6 +1,7 @@
 var usuarios = [
   { nome: "Danrlei", email: "danrleimentalista@gmail.com", senha: "Gestor@01" },
-  { nome: "Luan", email: "atend201@speedmais.com.br", senha: "vida2023" }
+  { nome: "Luan", email: "atend201@speedmais.com.br", senha: "vida2023" },
+  { nome: "Jaciany", email: "jaciany.freitas@speedmais.com.br", senha: "vida2023" }
 ];
 
 function login() {
