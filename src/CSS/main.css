@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root,
 :root[data-theme='dark'] {
     --primary-color: #000;
@@ -39,6 +40,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--primary-bg-color);
   color: var(--title-color);
+  font-family: 'roboto';
 }
 
 .header__toggle {
@@ -57,13 +59,15 @@ body {
   transition: ease-in-out .4s;
 }
 
-h1, h2, h3, h4, p, span {
+h1, h2, h3, h4, p, span, kbd{
   color: var(--title-color);
+  font-family: 'roboto';
 }
 
 
 li {
-  color:var(--title-color);   
+  color:var(--title-color);
+  margin-bottom: 1rem;
 }
 
 ul { list-style: none; padding-left: 5px; }
@@ -103,7 +107,10 @@ a { color:var(--title-color); text-decoration: none;}
   color: var(--title-color);
   text-decoration: none;
   align-items: center;
+}
 
+.anchors img{
+  width: 15rem;
 }
 
 .gestao {
@@ -112,6 +119,8 @@ a { color:var(--title-color); text-decoration: none;}
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
   background-color: var(--secondary-bg-color);
   color: var(--title-color);
   text-decoration: none;
@@ -157,7 +166,8 @@ justify-content: space-between;
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   font-weight: 100;
   font-family: Georgia, 'Times New Roman', Times, serif;
   display: flex;
@@ -169,7 +179,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  
   font-family: Segoe UI Black;
   border-radius: 5%;
   color: rgb(255, 0, 0);
@@ -178,9 +187,32 @@ main {
   transition: opacity 1.0s, box-shadow 1.0s;
   box-shadow: 0 0 30px rgba(202, 201, 250, 0);
   cursor: pointer;
+  margin-bottom: 2rem;
 }
 
 .bot:hover, .boto:hover {
+  opacity: 3;
+  box-shadow: 0 0 50px rgb(255, 0, 0);
+}
+
+.boto1 {
+  width: 35rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Segoe UI Black;
+  border-radius: 5%;
+  color: rgb(255, 0, 0);
+  background: rgba(214, 214, 214, 0.473);
+  font-size: 3rem;
+  transition: opacity 1.0s, box-shadow 1.0s;
+  box-shadow: 0 0 30px rgba(202, 201, 250, 0);
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.bot:hover, .boto1:hover {
   opacity: 3;
   box-shadow: 0 0 50px rgb(255, 0, 0);
 }
@@ -250,4 +282,10 @@ footer {
 }
 .login-btn:hover {
   opacity: 0.9;
+}
+
+
+#credencial img{
+  width: 40rem;
+  height: 20rem;
 }

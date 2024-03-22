@@ -1,7 +1,7 @@
 var usuarios = [
-  { nome: "Danrlei", email: "danrleimentalista@gmail.com", senha: "Gestor@01" },
-  { nome: "Luan", email: "atend201@speedmais.com.br", senha: "vida2023" },
-  { nome: "Jaciany", email: "jaciany.freitas@speedmais.com.br", senha: "vida2023" }
+  { nome: "Usuário 1", email: "usuario@speedmais.com", senha: "speed123" },
+  { nome: "Usuário 2", email: "elizabeth.moraes@speedmais.com.br", senha: "speed123" },
+  { nome: "Usuário 3", email: "danielle.barros@speedmais.com.br", senha: "speed123" },
 ];
 
 function login() {
@@ -18,11 +18,11 @@ function login() {
   });
 
   if (usuarioEncontrado) {
-    var mensagem = "Bem-vindo, ao ambiente ExplorerPNCP" + usuarioEncontrado.nome + "!";
+    var mensagem = "Bem-vindo, ao ambiente ExplorerSIPEC/DECIPEX" + usuarioEncontrado.nome + "!";
     exibirMensagemSucesso(mensagem);
     window.location.href = "explorer.html";
   } else {
-    exibirMensagemErro.alert("Credenciais inválidas. Por favor, tente novamente.");
+    exibirMensagemErro("Credenciais inválidas. Por favor, tente novamente.");
   }
 }
 

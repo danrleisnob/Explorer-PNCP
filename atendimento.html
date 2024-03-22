@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="./img/speed.png" type="image/x-icon">
+  <link rel="stylesheet" href="./src/CSS/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="icon" href="./src/img/logo bw.PNG" type="image/x-icon">
+  <script src="./src/JS/select.js"></script>
+  <title>Explorer PNCP</title>
+
+</head>
+
+<body>
+  <div class="logo">
+    <div class="header__brand">
+      <a href="explorer.html">
+        <img class="brand__logo" src="./src/img/logo explorer black1.PNG" alt="" srcset="Logo Danrlei">
+      </a>
+    </div>
+
+    <div class="header_toggle">
+      <i id="toggletheme" class="bi bi-sun"></i>
+    </div>
+
+  </div>
+
+  <div class="bar"></div>
+
+  <div class="content">
+    <div class="sidebar">
+      <menu>
+        <p><strong>Veja também:</strong></p>
+        <details>
+          <summary>Atendimento Inicial</summary>
+          <ol id="errosList">
+            <li><a href="#" onclick="showErrorText('atendimentoinicial')">O usuário está informando ao utilizar nossa API alguma funcionalidade não está funcionado</a></li>
+            <li><a href="#" onclick="showErrorText('credencial')">Antes de subir o chamado você deve se certificar que.</a></li>
+        </ol>
+        </details>
+
+      </menu>
+    </div>
+
+    <!-- campo textos scripts que os colaboradores devem usar atrelado ao menu-->
+
+    <main class="main">
+      
+      <!-- Atendimento Inicial -->
+      <div id="atendimentoinicial" style="display: none;">
+        <h1>Campo da API não funciona? função não funciona?</h1>
+        <h2>Situação</h2>
+
+        o usuário tentou criar ou utilizar nossa api atravez do swagger ou outro sistema<br>
+        <h2>Quando Ocorre?</h2>
+
+        Quando o usuário alegar que não está conseguindo realizar alguma função na API e a mesma não responde.<br>
+        <h2>Deve certifica.</h2>
+
+        Se quem está fazendo essa afirmação de fato é um servidor ou funcionário ressponsável pelo sistema.<br>
+        <h2>Solução sugerida</h2>
+
+        Solicitar o máximo de informações possíveis para facilitar a análise do técnico.<br>
+        <h2>Modelo de Resposta para Chamados</h2>
+
+        <P>Prezado(a),<br>
+            Espero que esta mensagem o encontre bem.<br>
+            Gostaríamos de solicitar suas evidências dos testes realizados no ambiente de treinamento em https://treina.pncp.gov.br/api/pncp/swagger-ui/index.html?configUrl=/pncp-api/v3/api-docs/swagger-config.<br>
+            Entendemos a importância de garantir que todas as funcionalidades e recursos estejam adequadamente testados antes da implantação em produção. Para facilitar a revisão e verificação dos testes realizados, solicitamos que você forneça evidências claras e detalhadas dos testes conduzidos no ambiente de treinamento.<br>
+            Por favor, inclua informações como:<br>
+            Uma descrição detalhada dos cenários de teste abordados.<br>
+            Capturas de tela ou gravações de vídeo que demonstrem os testes realizados.<br>
+            Quaisquer resultados ou observações relevantes obtidos durante os testes.<br>
+            Se precisar de assistência adicional ou se tiver alguma dúvida sobre os requisitos de evidência, não hesite em nos contatar. Estamos aqui para ajudar e garantir que possamos revisar seus testes de forma eficaz e completa.<br>
+            Agradecemos antecipadamente sua cooperação e prontidão em fornecer as evidências solicitadas. Sua contribuição é fundamental para garantir a qualidade e confiabilidade de nossos sistemas.<br>
+            
+            Atenciosamente,<br>
+            Equipe PNCP.</P><br>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes)<br>
+
+        <h3>Palavras-chave</h3>
+        Erro<br>
+
+        <h3>Referências</h3>
+        5893940</p>
+      </div>
+      
+
+      <div id="credencial" style="display: none;">
+        <h1>O usuário está solicitando credenciamento para o ambiente de produção?</h1>
+        <h2>Situação</h2>
+
+        Já possui acesso ao ambiente de treinamento e agora quer ter o acesso ao ambiente de produção
+        <h2>Quando Ocorre?</h2>
+
+        ao enviar as informações no nosso portal
+
+        <h2>Deve certifica.</h2>
+
+        Vamos lá<br>
+        Antes de subir o chamado para o N3 você deverá se certificar que o usuário enviou os 5 links de testes necessários para obter as credenciais<br>
+        o primeiro teste é:<br>
+        o usuário tem que incluir ao menos 1 item de contratação<br>
+
+        o segundo teste é:<br>
+        Incluir ao menos um resultado dos itens de uma contratação.<br>
+
+        o terceiro teste é:<br>
+        Inclusão de ao menos uma ata de registro de preço<br>
+
+        o quarto teste é:<br>
+        Recomenda-se que sejam utilizados os serviços de retificação da contratação, do resultado e de atas para a realização de um teste mais completo da aplicação. <br> 
+        <img src="./src/img/Screenshot_1.png" alt=""><br>
+
+        Caso o usuário tenha enviado 4 ou 3 links você deverá entrar nos links e verificar se um dos links existe a retificação clicando em historico.<br>
+        e o quinto teste é:<br>
+
+        Caso o Portal/Sistema seja responsável pela gestão de Planos de Contratação Anual - PCA e Contratos, é necessário que sejam realizadas simulações que envolvam a inclusão/retificação/exclusão de PCA’s e Contratos, conforme parâmetros descritos no Manual de Integração do PNCP.<br>
+
+        <h2>Solução sugerida</h2>
+
+        solicitar todos os testes necessários conforme nossa FAQ<br>
+        <h2>Modelo de Resposta para Chamados</h2>
+
+        <P>
+            <a href="https://www.gov.br/pncp/pt-br/pncp/perguntas-e-respostas">19. Como e quando solicitar as credenciais de acesso ao Ambiente de Produção (integração de sistemas) do PNCP?</a>
+        </P><br>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes)<br>
+
+        <h3>Palavras-chave</h3>
+        Credencial<br>
+
+        <h3>Referências</h3>
+        5893940</p>
+      </div>
+
+    </main>
+
+
+
+    <div class="anchors">
+      <figure>
+        <a
+          href="https://www.gov.br/pncp/pt-br/acesso-a-informacao/manuais/manualdeintegrao-pncpverso2-2-9.pdf">
+
+          <h4><strong>Fique por dentro!</strong></h4>
+          <figcaption>Atenção⚠️</figcaption>
+          <P>Técnico N1 a grande maioria das respostas são no nosso manual<br>
+            então análise o chamado antes de subir verifique os casos com calma e atenção verifique nas FAQ's se o questionamento do usuário já foi respondido alguma vez.</p>
+          <kbd>Atualizado em 22/03/2024</kbd>
+        </a>
+      </figure>
+    </div>
+  </div>
+  </div>
+
+  <footer>
+    <div class="fot">
+        <p><strong> Centrais de atendimento</strong></p>
+        <li>SIPEC: 0800 978 9009</li>
+        <li>DECIPEX: 0800 978 9004</li>
+        <li>SPU: 0800 978 9005</li>
+        <li>GESTÃO DE CARREIRAS: 0800 978 9002</li>
+        <li>SIASG E SCPD: 0800 978 9001</li>
+        <li>TransfereGov: 0800 978 9008</li>
+    </div>
+
+    <div class="rede">
+      <strong>Redes Sociais</strong><br>
+      <a href="https://www.linkedin.com/company/speedmais-solu%C3%A7%C3%B5es-ltda/mycompany/" target="_blank"><i
+          class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href="https://www.facebook.com/speedcallcenter/?locale=pt_BR" target="_blank"><i
+          class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/speedmais/" target="_blank"><i
+          class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://www.speedmais.com.br/" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://github.com/danrleisnob" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+    </div>
+  </footer>
+  <script src="./src/JS/toggle.js"></script>
+</body>
+
+</html>
