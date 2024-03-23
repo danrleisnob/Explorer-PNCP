@@ -2,7 +2,7 @@ var usuarios = [
   { nome: "Danrlei", email: "danrleimentalista@gmail.com", senha: "Gestor@01" },
   { nome: "Elizabeth", email: "elizabeth.moraes@speedmais.com.br", senha: "speed123" },
   { nome: "Jaciane", email: "jaciany.freitas@speedmais.com.br", senha: "vida2023" },
-  { nome: "Usuário 3", email: "danielle.barros@speedmais.com.br", senha: "speed123" },
+  { nome: "Usuário 3", email: "danielle.barros@speedmais.com.br", senha: "speed123" }
 ];
 
 function login() {
