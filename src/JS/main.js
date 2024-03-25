@@ -3,6 +3,7 @@ var usuarios = [
   { nome: "Elizabeth", email: "elizabeth.moraes@speedmais.com.br", senha: "speed123" },
   { nome: "Jaciane", email: "jaciany.freitas@speedmais.com.br", senha: "vida2023" },
   { nome: "Yvis", email: "atend307@speedmais.com.br", senha: "719194" },
+  { nome: "Luan", email: "atend201@speedmais.com.br", senha: "vida2023" },
   { nome: "Usuário 3", email: "danielle.barros@speedmais.com.br", senha: "speed123" }
 ];
 
