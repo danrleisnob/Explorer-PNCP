@@ -4,6 +4,7 @@ var usuarios = [
   { nome: "Jaciane", email: "jaciany.freitas@speedmais.com.br", senha: "vida2023" },
   { nome: "Yvis", email: "atend307@speedmais.com.br", senha: "719194" },
   { nome: "Luan", email: "atend201@speedmais.com.br", senha: "vida2023" },
+  { nome: "Marcelo", email: "marcelo.bastos@gmail.com", senha: "marcelo@123" },
   { nome: "Usuário 3", email: "danielle.barros@speedmais.com.br", senha: "speed123" }
 ];
 
