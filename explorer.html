@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./src/CSS/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" href="./src/img/logo bw.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="./src/CSS/chatbot.css">
     <title>Explorer PNCP</title>
 
 </head>
@@ -33,11 +34,38 @@
     <div class="bar">
         <figure>
             <div class="botao">
-                
+                <div class="parent">
+                    <div class="desc">
+                       <button id="init">ABRIR CHAT</button>
+                </div>
+                <div id="test" style="position: fixed;top: 4rem;right: 8rem;display: none;">
+                    <div class="child" id="chatbot">
+                        <div class="header">
+                            <div class="h-child">
+                                <img src="./src/img/png-transparent-mobile-robot-graphy-illustration-robot-electronics-funny-artificial-intelligence.png" alt="avatar" id="avatar">
+                                <div>
+                                    <span class="name">Chatbot</span>
+                                    <br>
+                                    <span style="color:lawngreen">online</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="refBtn"><i class="fa fa-refresh" onclick="initChat()"></i></button>
+                            </div>
+                        </div>
+                        <div id="chat-box">
+            
+                        </div>
+                        <div class="footer">
+                            <span>Danrlei Souza <a href="https://github.com/danrleisnob/Explorer-PNCP">@</a> </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </figure>
     </div>
 
+    
     <div class="content">
         <div class="sidebar">
             <menu>
@@ -108,6 +136,7 @@
         </div>
     </footer>
     <script src="./src/JS/toggle.js"></script>
+    <script src="./src/JS/chatbot.js"></script>
 </body>
 
 </html>
