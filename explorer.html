@@ -1,142 +1,178 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="dark">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="./img/speed.png" type="image/x-icon">
+    <title>Explorer PNCP</title>
     <link rel="stylesheet" href="./src/CSS/main.css">
+    <link rel="stylesheet" href="./src/CSS/chatbot.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" href="./src/img/logo bw.PNG" type="image/x-icon">
-    <link rel="stylesheet" href="./src/CSS/chatbot.css">
-    <title>Explorer PNCP</title>
 
 </head>
-
 <body>
+
     <header>
-        <div class="logo">
+      <div class="logotipo">
+        <a href="./explorer.html">
+        <h1>Explorer</h1>
+        <h2>PNCP</h2>
+        </a>
+      </div>
 
-            <div class="header__brand">
-                <img class="brand__logo" src="./src/img/logo explorer black1.PNG" alt="" srcset="Logo Danrlei">
-            </div>
+        <div class="btn-left">
 
-            <div class="header_toggle">
-                <i id="toggletheme" class="bi bi-sun"></i>
-            </div>
+            <button>
+                <a href="./erro.html">Script</a>
+            </button>
+            <button>
+                <a href="./atendimento.html">Guia de Atendimento</a>
+            </button>
+        </div>
+        <div class="btn-rigth">
+            <button>
+            <a href="">Assistente GPT</a>
+            </button>
         </div>
     </header>
 
-
-    <div class="bar">
-        <figure>
-            <div class="botao">
-                <div class="parent">
-                    <div class="desc">
-                       <button id="init">ABRIR CHAT</button>
+    <!-- carousel -->
+          
+            <div class="container-carrosel">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="https://www.gov.br/pncp/pt-br">  <img src="./src/img/Screenshot_17.png" class="d-block w-100" alt="..."> </a>
+                  </div>
+                  <div class="carousel-item">
+                  <a href="https://www.gov.br/pncp/pt-br/acesso-a-informacao/manuais">  <img src="./src/img/Screenshot_18.png" class="d-block w-100" alt="..."> </a>
+                  </div>
+                  <div class="carousel-item">
+                   <a href="https://www.gov.br/pncp/pt-br/acesso-a-informacao/noticias"> <img src="./src/img/Screenshot_19.png" class="d-block w-100" alt="..."> </a>
+                  </div>
                 </div>
-                <div id="test" style="position: fixed;top: 4rem;right: 8rem;display: none;">
-                    <div class="child" id="chatbot">
-                        <div class="header">
-                            <div class="h-child">
-                                <img src="./src/img/png-transparent-mobile-robot-graphy-illustration-robot-electronics-funny-artificial-intelligence.png" alt="avatar" id="avatar">
-                                <div>
-                                    <span class="name">Chatbot</span>
-                                    <br>
-                                    <span style="color:lawngreen">online</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- chatbot -->
+
+            <div class="bar">
+                <figure>
+                    <div class="botao">
+                        <div class="parent">
+                            <div class="desc">
+                               <button id="init">ABRIR CHATBOT</button>
+                        </div>
+                        <div id="test" style="position: fixed; top: 4rem;right: 8rem;display: none;">
+                            <div class="child" id="chatbot">
+                                <div class="header">
+                                    <div class="h-child">
+                                        <img src="https://static.vecteezy.com/system/resources/previews/007/225/199/non_2x/robot-chat-bot-concept-illustration-vector.jpg" alt="avatar" id="avatar">
+                                        <div>
+                                            <span class="name">Chatbot</span>
+                                            <br>
+                                            <span style="color:lawngreen">online</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="refBtn"><i class="fa fa-refresh" onclick="initChat()"></i></button>
+                                    </div>
+                                </div>
+                                <div id="chat-box">
+                    
+                                </div>
+                                <div class="footer">
+                                    <span>Danrlei Souza <a href="https://github.com/danrleisnob/Explorer-PNCP" target="_blank">@</a> </span>
                                 </div>
                             </div>
-                            <div>
-                                <button class="refBtn"><i class="fa fa-refresh" onclick="initChat()"></i></button>
-                            </div>
-                        </div>
-                        <div id="chat-box">
-            
-                        </div>
-                        <div class="footer">
-                            <span>Danrlei Souza <a href="https://github.com/danrleisnob/Explorer-PNCP">@</a> </span>
                         </div>
                     </div>
-                </div>
+                </figure>
+            </div>      
             </div>
-        </figure>
+            </div>  
+            </div>
+
+          <!-- Coluna -->
+            <div class="content1">
+              <div class="sidebar">
+                  <menu>
+                      <p><strong> Veja também</strong></p>
+                      <li><a href="https://www.gov.br/pncp/pt-br/acesso-a-informacao/manuais" target="_blank">Manual Atualizado</a></li>
+                      <li><a href=": https://treina.pncp.gov.br/api/pncp/swaggerui/index.html?configUrl=/pncp-api/v3/api-docs/swagger-config" target="_blank">Swagger homologação</li>
+                      <li><a href="https://pncp.gov.br/api/pncp/swagger-ui/index.html#/" target="_blank">Swagger Produção</li>
+                          <li><a href="https://dados.gov.br/dados/conjuntos-dados/compras-publicas-do-governo-federal" target="_blank">Dados Abertos</a></li>
+                          <li><a href="https://www.gov.br/pncp/pt-br/acesso-a-informacao/Capacite-se/#MENU" target="_blank">Capacite-se</a></li>
+                          <li><a href="https://www.gov.br/pncp/pt-br/acesso-a-informacao/noticias" target="_blank">Notícias</a></li>
+                          <li><a href="https://www.gov.br/pncp/pt-br/acesso-a-informacao/comunicados" target="_blank">Comunicado</a></li>
+                      <p><strong> Consultas</strong></p>
+                      <li><a href="https://www.gov.br/pncp/pt-br/pncp/perguntas-e-respostas" target="_blank">FAQ PNCP🔎</a></li>
+                      <li><a href="https://www.gov.br/pncp/pt-br/catalogo-eletronico-de-padronizacao" target="_blank">Catalogo de Padronização</a></li>
+                      <li><a href="https://www.gov.br/pncp/pt-br/catalogo-eletronico-de-padronizacao/perguntas-frequentes" target="_blank">FAQ Catalogo de Padronização</a></li>
+                      <li><a href="./top-10.html">Top 10 scripts mais usados</a></li>
+      
+      
+                      <p><strong>Atenção⚠️</strong></p>
+      
+                      <a href="./atendimento.html">Se o chamado não for referente ao PNCP o mesmo deve ser direcionado para sua estruturante de
+                          destino.</a>
+                  </menu>
+              </div>
+
+              <main class="main">
+
+            </main>
+
+            <div class="anchors">
+              <a
+                  href="https://www.gov.br/pncp/pt-br/acesso-a-informacao/comunicados/comunicado-no-1-2023-portal-nacional-de-contratacoes-publicas-pncp">
+
+                  <h4><strong>Fique por dentro!</strong></h4>
+                  <img src="https://www.gov.br/pncp/pt-br/imagens/logopncp-azul.png" alt="">
+
+                  <figcaption>Comunicado nº 1/2023 - Portal Nacional de Contratações Públicas (PNCP)</figcaption>
+                  <P>O Comitê Gestor da Rede Nacional de Contratações Públicas (CGRNCP), na qualidade de responsável
+                      pela gestão do Portal Nacional de Contratações Públicas (PNCP), nos termos do §1º do art. 174 da
+                      Lei nº 14.133/2021, comunica...</p>
+                  <kbd>Atualizado em 03/03/2024</kbd>
+              </a>
+      </div>
+            </div>
+
+  <footer>
+
+    <div class="fot">
+        <p><strong> Centrais de atendimento</strong></p>
+        <li>SIPEC: 0800 978 9009</li>
+        <li>DECIPEX: 0800 978 9004</li>
+        <li>SPU: 0800 978 9005</li>
+        <li>GESTÃO DE CARREIRAS: 0800 978 9002</li>
+        <li>SIASG E SCPD: 0800 978 9001</li>
+        <li>TransfereGov: 0800 978 9008</li>
     </div>
-
-    
-    <div class="content">
-        <div class="sidebar">
-            <menu>
-                <p><strong> Veja também</strong></p>
-                <li><a href="https://www.gov.br/pncp/pt-br/acesso-a-informacao/manuais" target="_blank">Manual Atualizado</a></li>
-                <li><a href=": https://treina.pncp.gov.br/api/pncp/swaggerui/index.html?configUrl=/pncp-api/v3/api-docs/swagger-config" target="_blank">Swagger homologação</li>
-                <li><a href="https://pncp.gov.br/api/pncp/swagger-ui/index.html#/" target="_blank">Swagger Produção</li>
-                    <li><a href="https://dados.gov.br/dados/conjuntos-dados/compras-publicas-do-governo-federal" target="_blank">Dados Abertos</a></li>
-                    <li><a href="https://www.gov.br/pncp/pt-br/acesso-a-informacao/Capacite-se/#MENU" target="_blank">Capacite-se</a></li>
-                    <li><a href="https://www.gov.br/pncp/pt-br/acesso-a-informacao/noticias" target="_blank">Notícias</a></li>
-                    <li><a href="https://www.gov.br/pncp/pt-br/acesso-a-informacao/comunicados" target="_blank">Comunicado</a></li>
-                <p><strong> Consultas</strong></p>
-                <li><a href="https://www.gov.br/pncp/pt-br/pncp/perguntas-e-respostas" target="_blank">FAQ PNCP🔎</a></li>
-                <li><a href="https://www.gov.br/pncp/pt-br/catalogo-eletronico-de-padronizacao" target="_blank">Catalogo de Padronização</a></li>
-                <li><a href="https://www.gov.br/pncp/pt-br/catalogo-eletronico-de-padronizacao/perguntas-frequentes" target="_blank">FAQ Catalogo de Padronização🔎</a></li>
-                <li><a href="./top-10.html" target="_blank">Top 10 scripts mais usados</a></li>
-
-
-                <p><strong>Atenção⚠️</strong></p>
-
-                <a href="">Se o chamado não for referente ao PNCP o mesmo deve ser direcionado para sua estruturante de
-                    destino.</a>
-            </menu>
-        </div>
-
-        <main class="main">
-            <a href="./erro.html"><button class="boto">Scripts</button></a>
-            <a href="./atendimento.html"><button class="boto1">Guia de Atendimento</button></a>
-        </main>
-
-        <div class="anchors">
-                <a
-                    href="https://www.gov.br/pncp/pt-br/acesso-a-informacao/comunicados/comunicado-no-1-2023-portal-nacional-de-contratacoes-publicas-pncp">
-
-                    <h4><strong>Fique por dentro!</strong></h4>
-                    <img src="./src/img/pncp.png" alt="">
-
-                    <figcaption>Comunicado nº 1/2023 - Portal Nacional de Contratações Públicas (PNCP)</figcaption>
-                    <P>O Comitê Gestor da Rede Nacional de Contratações Públicas (CGRNCP), na qualidade de responsável
-                        pela gestão do Portal Nacional de Contratações Públicas (PNCP), nos termos do §1º do art. 174 da
-                        Lei nº 14.133/2021, comunica...</p>
-                    <kbd>Atualizado em 03/03/2024</kbd>
-                </a>
-        </div>
+    <div class="rede">
+      <strong>Redes Sociais</strong><br>
+      <a href="https://www.linkedin.com/company/speedmais-solu%C3%A7%C3%B5es-ltda/mycompany/" target="_blank"><i
+          class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href="https://www.facebook.com/speedcallcenter/?locale=pt_BR" target="_blank"><i
+          class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/speedmais/" target="_blank"><i
+          class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://www.speedmais.com.br/" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://github.com/danrleisnob" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
     </div>
-    </div>
-
-    <footer>
-        <div class="fot">
-            <p><strong> Centrais de atendimento</strong></p>
-            <li>SIPEC: 0800 978 9009</li>
-            <li>DECIPEX: 0800 978 9004</li>
-            <li>SPU: 0800 978 9005</li>
-            <li>GESTÃO DE CARREIRAS: 0800 978 9002</li>
-            <li>SIASG E SCPD: 0800 978 9001</li>
-            <li>TransfereGov: 0800 978 9008</li>
-        </div>
-        <div class="rede">
-            <strong>Redes Sociais</strong><br>
-            <a href="https://www.linkedin.com/company/speedmais-solu%C3%A7%C3%B5es-ltda/mycompany/" target="_blank"><i
-                    class="fa fa-linkedin w3-hover-opacity"></i></a>
-            <a href="https://www.facebook.com/speedcallcenter/?locale=pt_BR" target="_blank"><i
-                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
-            <a href="https://www.instagram.com/speedmais/" target="_blank"><i
-                    class="fa fa-instagram w3-hover-opacity"></i></a>
-            <a href="https://www.speedmais.com.br/" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-            <a href="https://github.com/danrleisnob" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-        </div>
-    </footer>
-    <script src="./src/JS/toggle.js"></script>
-    <script src="./src/JS/chatbot.js"></script>
+</footer>
+<script src="./src/JS/chatbot.js"></script>
 </body>
-
 </html>

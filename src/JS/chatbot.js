@@ -115,9 +115,9 @@ var len1 = data.chatinit.title.length;
 
 function showChatBot() {
     console.log(this.innerText);
-    if (this.innerText == 'ABRIR CHAT') {
+    if (this.innerText == 'ABRIR CHATBOT') {
         document.getElementById('test').style.display = 'block';
-        document.getElementById('init').innerText = 'FECHAR CHAT';
+        document.getElementById('init').innerText = 'FECHAR CHATBOT';
         initChat();
     } else {
         location.reload();

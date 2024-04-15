@@ -1,13 +1,24 @@
+.botao{
+    z-index: 900;
+    display: flex;
+}
+
+
 #init{
     margin-top: 2rem;
-    background: indianred;
+    font: bold;
+    background: #0a2653;;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 12px;
     font-weight: 500;
-    color: rgb(7, 8, 8);
+    color: white;
     cursor: pointer;
+}
+
+#init:hover{
+    color: rgb(192, 192, 192);
 }
 
 .desc p{
