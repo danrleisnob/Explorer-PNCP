@@ -61,6 +61,7 @@
             <li><a href="#" onclick="showErrorText('naoautorizada')">OPERAÇÃO NÃO AUTORIZADA. SOMENTE O USUÁRIO QUE
                 PUBLICOU A CONTRATAÇÃO PODE ANEXAR DOCUMENTO À MESMA – PNCP</a></li>
             <li><a href="#" onclick="showErrorText('naoaparece')">Órgão não aparece no filtro Unidades – PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('codigoerro')">Código da Unidade do órgão informado não é uma Unidade cadastrada para o órgão  – PNCP</a></li>
 
           </ol>
         </details>
@@ -101,6 +102,54 @@
     <main class="main">
       
       <!--erro-->
+
+         <div id="codigoerro" style="display: none;">
+
+        <h1>Código da Unidade do órgão informado não é uma Unidade cadastrada para o órgão  – PNCP
+        </h1>
+        <h2>Situação</h2>
+
+        Ao preencher um contrato ou licitação retorna o erro que o código já existe ou que a publica .
+
+        <h2>Quando Ocorre?</h2>
+
+        Publicação de contratos
+
+        <h2>Deve certifica.</h2>
+
+        Se quem está fazendo essa afirmação de fato é um servidor.
+
+        <h2>Solução sugerida</h2>
+
+        Orienta a entrar em contato com o seu setor juridico para indicar como deve ser publicada
+
+        <h2>Modelo de Resposta para Chamados</h2>
+
+        <P>Prezado(a),
+
+        Gostaríamos de esclarecer que temos uma regra de negócio que visa garantir a unicidade do Contrato no PNCP por meio das seguintes informações-chave:<br>
+        Chave da Contratação (ID Contratação PNCP)<br>
+        Ano do Contrato<br>
+        CNPJ do Órgão/Entidade<br>
+        Código da Unidade e Nome da Unidade Executora<br>
+        Tipo do Contrato<br>
+        Número do Contrato<br>
+        Para uma compreensão mais detalhada, convidamos você a consultar nossa documentação disponível em: https://treina.pncp.gov.br/api/pncp/swagger-ui/index.html?configUrl=/pncp-api/v3/api-docs/swagger-config#/Modalidade/obterTodosRegistros_2, onde estão listadas todas as modalidades, amparos legais, entre outros detalhes.<br>
+        É importante ressaltar que cada órgão ou entidade deve seguir as leis que os regem ao preencher as informações. Em caso de dúvidas ou necessidade de orientações específicas, recomendamos que procure o setor jurídico do seu órgão ou entidade.<br>
+        Agradecemos pela sua atenção e estamos à disposição para quaisquer esclarecimentos adicionais.<br>
+        
+        Atenciosamente,<br>
+        Equipe de Suporte Técnico.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes N1)<br>
+
+        <h3>Palavras-chave</h3>
+        Erro| Divulgação | outro usuário<br>
+
+        <h3>Referências</h3>
+        7788335
+      </div>
 
       <div id="naoautorizada" style="display: none;">
 
