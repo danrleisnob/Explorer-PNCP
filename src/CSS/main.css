@@ -169,6 +169,35 @@ footer {
     margin-left: 2rem;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    width: 100%;  
+}
+
+main button{
+    margin-top: 2rem;
+    width: 100%;
+    height: 5rem;
+    border: transparent;
+    background-color: rgb(86, 125, 255, 0.8);
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+main button a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+
+main button:hover{
+    color: gray;
+}
+
 @media screen and (max-width: 768px) {
     header {
         display: flex;

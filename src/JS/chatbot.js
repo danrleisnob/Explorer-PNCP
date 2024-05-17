@@ -5,7 +5,7 @@ var data = {
     },
     duvidas: {
         title:["Por favor selecione uma categoria"],
-        options:['preenchimento','Bollywood','Web Series','Others'],
+        options:['preenchimento','consulta','Lei 14.133','outros'],
         url : {
             
         }
@@ -21,17 +21,17 @@ var data = {
     },
     erros: {
         title:["Obrigado por nos consultar","Veja se sua dúvida esta relacionada"],
-        options:['Electronics','Beauty products','Mobiles','Men Fashion','Women fashion'],
+        options:['erro'],
         url : {
             
         }
     },
-    electronics: {
-        title:["Olá eu sou o danrlei eletronico","Click on it to know more"],
-        options:['Televisions','Cameras','Gaming Consoles','Headphones','Speakers'],
+    erro: {
+        title:["Alguns erros de consulta"],
+        options:['Download do documento no historico não funciona?','Filtro não aparece?'],
         url : {
             more:"https://www.gov.br/pncp/pt-br",
-            link:["Olá mundo","olá mundo2","olá mundo3","olá mundo4","olá mundo5"]
+            link:["informamos que o documento necessário pode ser baixado na aba ARQUIVOS. Esperamos que esta alternativa possa ajudá-lo temporariamente até que uma solução permanente seja implementada.","Gostaríamos de informar que em nossa página existem dois elementos de listas de pesquisa: um localizado acima e outro na lateral esquerda."]
         }
     },
     beauty: {
@@ -82,28 +82,28 @@ var data = {
             link:["Dúvidas sobre como ou qual o preenchimento de um amparo legal deve ser tirada com o setor juridico responsável do órgão.","Se o usuário informar alguma ausência nesses aparos legais o N1 deverá subir o chamado para o N3 para que seja avaliado.","Nossa instituição não possui autoridade para indicar ou prescrever como deve ser conduzida uma licitação, uma vez que esta é uma prerrogativa exclusiva dos licitantes e das normativas vigentes.","Clique em scripts depois vá até a coluna erro, pesquise maior lance"]
         }
     },
-    bollywood: {
-        title: ["Thanks for your response","Here are some genre based movies"],
-        options: ["Comedy","Horror","Sci-Fi","Romance","Action"],
+    consulta: {
+        title: ["Bem Vindo ao consulta PNCP"],
+        options: ["Consulta PNCP","Consulta Treina PNCP","Legislação Vigente","Painel de Números"],
         url: {
             more:"https://www.gov.br/pncp/pt-br",
-            link:["Olá mundo","olá mundo2","olá mundo3","olá mundo4","olá mundo5"]
+            link:["https://pncp.gov.br/app/editais?q=&status=recebendo_proposta&pagina=1","https://treina.pncp.gov.br/app/editais?q=&status=recebendo_proposta&pagina=1","https://www.gov.br/pncp/pt-br/acesso-a-informacao/legislacao","https://www.gov.br/pncp/pt-br/acesso-a-informacao/painel-pncp-em-numeros"]
         }
     },
     web: {
-        title: ["Thanks for your response","Here are some genre based web series"],
-        options: ["Comedy","Horror","Sci-Fi","Romance","Action"],
+        title: ["Olá aqui você aprenderá tudo sobre as lei 14.133"],
+        options: ["Endereço para lei","Consulta lei","Modelo de licitaçõs"],
         url: {
             more:"https://www.gov.br/pncp/pt-br",
-            link:["Olá mundo","olá mundo2","olá mundo3","olá mundo4","olá mundo5"]
+            link:["https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm","https://www.gov.br/compras/pt-br/nllc","https://www.gov.br/compras/pt-br/nllc/modelos-de-licitacoes-e-contratos"]
         }
     },
-    others: {
-        title: ["Here are some more options for you"],
-        options: ["YouTube","Netflix","Amazon Prime","Hot Star"],
+    outros: {
+        title: ["Fique por Dentro de tudo do GOV"],
+        options: ["Veja mais outros"],
         url: {
             more:"https://www.gov.br/pncp/pt-br",
-            link:["Olá mundo","olá mundo2","olá mundo3","olá mundo4","olá mundo5"]
+            link:["https://www.gov.br/pt-br"]
         }
     },
 }
