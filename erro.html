@@ -62,6 +62,7 @@
                 PUBLICOU A CONTRATAÇÃO PODE ANEXAR DOCUMENTO À MESMA – PNCP</a></li>
             <li><a href="#" onclick="showErrorText('naoaparece')">Órgão não aparece no filtro Unidades – PNCP</a></li>
             <li><a href="#" onclick="showErrorText('codigoerro')">Código da Unidade do órgão informado não é uma Unidade cadastrada para o órgão  – PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('ataderegistro')">Adesão Ata de registro de preço  – PNCP</a></li>
 
           </ol>
         </details>
@@ -90,6 +91,7 @@
             <li><a href="#" onclick="showErrorText('valortotalhomologado')">Valor total homologado – PNCP</a></li>
             <li><a href="#" onclick="showErrorText('DOU')">A publicação no PNCP substitui a Publicação no DOU – PNCP</a></li>
             <li><a href="#" onclick="showErrorText('art78')">Inativação do Art 78 ou questões sobre</a></li>
+            <li><a href="#" onclick="showErrorText('acordodecooperacao')">Publicação de Acordo de Cooperação Técnica no PNCP</a></li>
 
 
           </ol>
@@ -104,7 +106,7 @@
       
       <!--erro-->
 
-         <div id="codigoerro" style="display: none;">
+        <div id="codigoerro" style="display: none;">
 
         <h1>Código da Unidade do órgão informado não é uma Unidade cadastrada para o órgão  – PNCP
         </h1>
@@ -150,6 +152,60 @@
 
         <h3>Referências</h3>
         7788335
+      </div>
+
+      <div id="ataderegistro" style="display: none;">
+
+        <h1>Adesão Ata de registro de preço  – PNCP</h1>
+        <h2>Situação</h2>
+
+        <p>Como realizar a divulgação da adesão a ata de registro de preço</p>
+
+        <h2>Quando Ocorre?</h2>
+
+        <p>Ao tentar realizar a divulgação da adesão a ata de registro de preço o PNCP não permite devido algumas implicações porém já foi implementada a solução</p>
+
+        <h2>Deve certifica.</h2>
+
+        <p> Se quem está fazendo essa afirmação de fato é um servidor ou um desenvolvedor de sistema.</p>
+
+        <h2>Solução sugerida</h2>
+
+        <p>(...)ata de registro de preços(...):<br>
+        6.4. Serviços de Ata<br>
+        6.4.1. Inserir Ata de Registro de Preço<br>
+        No Swagger, você pode encontrar a documentação em:<br>
+        </p>
+
+        <h2>Modelo de Resposta para Chamados</h2>
+
+        <P>Prezado(a),<br>
+
+          Em atenção a sua demanda, gostariamos de informar que atualmente disponibilizamos na nossa documentação as seguistes informações<br>
+          De acordo com o Manual de Integração(https://www.gov.br/pncp/pt-br/acesso-a-informacao/manuais/manual_de_integracao-pncp-versao_2-3-0.pdf) e também no SWAGGER (https://treina.pncp.gov.br/api/pncp/swagger-ui/index.html?configUrl=/pncp-api/v3/api-docs/swagger-config#/), mais especificamente nas seções:<br>
+          4.3. Composição do Número de Controle PNCP de PCA/Contratação/Ata/Contrato<br>
+          (...)ata de registro de preços(...):<br>
+          6.4. Serviços de Ata<br>
+          6.4.1. Inserir Ata de Registro de Preço<br>
+          No Swagger, você pode encontrar a documentação em:<br>
+          
+          Ata - Manutenção de Atas de Registro de Preços<br>
+          Gostaríamos de solicitar que, por favor, consultem o manual e realizem testes prévios no ambiente de treinamento para assegurar o correto funcionamento.<br>
+          
+          Agradecemos pela sua atenção e colaboração.<br>
+          Sugerimos que acompanhe nossas notícias: https://www.gov.br/pncp/pt-br/acesso-a-informacao/noticias<br>
+          Atenciosamente,<br>
+          
+          Portal Nacional de Contratações Públicas - PNCP</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes N1)<br>
+
+        <h3>Palavras-chave</h3>
+        Adesão | Ata<br>
+
+        <h3>Referências</h3>
+        8399507
       </div>
 
       <div id="naoautorizada" style="display: none;">
@@ -370,7 +426,7 @@
        Entendemos que você está enfrentando dificuldades relacionadas a este problema e gostaríamos de oferecer nossa assistência. Para facilitar sua experiência e ajudá-lo a contornar este desafio, informamos que o documento necessário pode ser baixado na aba "ARQUIVOS". Esperamos que esta alternativa possa ajudá-lo temporariamente até que uma solução permanente seja implementada.<br>
         <h2>Modelo de Resposta para Chamados</h2>
 
-        <P>rezado(a),<br>
+        <P>Prezado(a),<br>
 
         Espero que esta mensagem o encontre bem.<br>
         
@@ -1301,6 +1357,48 @@
 
         <h3>Referências</h3>
         """"</p>
+      </div>
+
+      <div id="acordodecooperacao" style="display: none;">
+        <h1>Publicação de Acordo de Cooperação Técnica no PNCP</h1>
+        <h2>Situação</h2>
+
+        Após o cliente tentar divulgar o acordo no sistema do PNCP o mesmo não encontra a opção
+        <h2>Quando Ocorre?</h2>
+
+        Ao tentar divulgar o acordo de cooperação técnica
+        <h2>Deve certifica.</h2>
+
+        <p>Se o usuário de fato é um servidor ou desenvolvedor do sistema</p>
+        <h2>Solução sugerida</h2>
+
+        <p>De acordo com o Manual de Integração do PNCP, versão 2.3.0, existem várias categorias de contratos, incluindo o Acordo de Cooperação Técnica (ACT), mas esse tipo de contrato foi revogado pelo art. 40 da Portaria Conjunta MGI/MF/CGU Nº 33/2023.<br></p>
+
+        <h2>Modelo de Resposta para Chamados</h2>
+
+        <P>Prezado(a),<br>
+
+          Entendemos a dificuldade que o TRT da 19ª Região está enfrentando para realizar a publicação de Acordos de Cooperação Técnica no PNCP, conforme estipulado pela Lei nº 14.133/2021. A questão se deve ao fato de que o Termo de Cooperação não se enquadra diretamente em nenhuma das modalidades previstas no sistema atualmente.<br>
+
+          De acordo com o Manual de Integração do PNCP, versão 2.3.0, existem várias categorias de contratos, incluindo o Acordo de Cooperação Técnica (ACT), mas esse tipo de contrato foi revogado pelo art. 40 da Portaria Conjunta MGI/MF/CGU Nº 33/2023.<br>
+          
+          Infelizmente, o PNCP não possui autoridade para indicar como deve ser dirigida uma publicação específica. É necessário realizar uma análise especializada por um setor jurídico. O órgão ou entidade deverá seguir as leis que o regem. Orientamos que procure o seu setor jurídico para verificar como deverá ser preenchida a publicação nesse caso específico.<br>
+          
+          Em caso de dúvidas adicionais, sinta-se à vontade para enviar o seu questionamento neste chamado.<br>
+          Sugerimos que acompanhe nossas notícias: https://www.gov.br/pncp/pt-br/acesso-a-informacao/noticias<br>
+        
+          Atenciosamente,<br>
+          Equipe Suporte PNCP.<br>
+        </P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes N1)<br>
+
+        <h3>Palavras-chave</h3>
+        Acordo | Cooperação <br>
+
+        <h3>Referências</h3>
+        8530513<br>
       </div>
 
       <div id="preencherlicitacao" style="display: none;">
