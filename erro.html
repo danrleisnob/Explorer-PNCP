@@ -63,6 +63,7 @@
             <li><a href="#" onclick="showErrorText('naoaparece')">Órgão não aparece no filtro Unidades – PNCP</a></li>
             <li><a href="#" onclick="showErrorText('codigoerro')">Código da Unidade do órgão informado não é uma Unidade cadastrada para o órgão  – PNCP</a></li>
             <li><a href="#" onclick="showErrorText('ataderegistro')">Adesão Ata de registro de preço  – PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('constraint')">coult not execute statement; SQL [m/a]; constraint [planocontratacaointem_uk_negocio]; – PNCP</a></li>
 
           </ol>
         </details>
@@ -827,6 +828,42 @@
 
         <h3>Referências</h3>
         4670409
+      </div>
+
+        <div id="constraint" style="display: none;">
+        <h2>coult not execute statement; SQL [m/a]; constraint [planocontratacaointem_uk_negocio]; – PNCP</h2>
+        <h2>Situação</h2>
+
+        Ao tentar publicar um PNCP o sistema recebe um erro coult not execute statement; SQL [m/a]; constraint [planocontratacaointem_uk_negocio]; indicando que existem items duplicados no processo
+        <h2>Quando Ocorre?</h2>
+
+        Na divulgação do PCA 
+        <h2>Deve certifica.</h2>
+
+        Se quem está fazendo essa afirmação de fato é um servidor ou um desenvolvedor do sistema.
+        <h2>Solução sugerida</h2>
+
+        Identificamos que o erro retornado pela constraint planocontratacaoitem_uk_negocio ocorre quando são enviados dois itens de um plano de contratação com o mesmo numeroitem. Em outras palavras, não é permitido que dois itens possuam o mesmo numeroitem dentro de um único plano de contratação.<br>
+        Para resolver este problema, por favor, assegure-se de que cada item no plano de contratação tenha um numeroitem exclusivo.<br>
+        <h2>Modelo de Resposta para Chamados</h2>
+
+        <P>Prezado(a),<br>
+        Identificamos que o erro retornado pela constraint planocontratacaoitem_uk_negocio ocorre quando são enviados dois itens de um plano de contratação com o mesmo numeroitem. Em outras palavras, não é permitido que dois itens possuam o mesmo numeroitem dentro de um único plano de contratação.<br>
+        Para resolver este problema, por favor, assegure-se de que cada item no plano de contratação tenha um numeroitem exclusivo.<br>
+        Agradecemos pela compreensão e estamos à disposição para quaisquer dúvidas adicionais.<br>
+        Recomendamos que acompanhe as notícias e atualizações fornecidas no portal do PNCP, no site oficial do Ministério da Gestão e da Inovação em Serviços Públicos - MGI, acessível em (https://www.gov.br/pncp/pt-br) e da nossa FAQ(https://www.gov.br/pncp/pt-br/pncp/perguntas-e-respostas).<br>
+        Atenciosamente,<br>
+        Equipe Suporte Técnico.<br>
+        Portal Nacional de Contratações Públicas.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes)<br>
+
+        <h3>Palavras-chave</h3>
+        Erro | SQL <br>
+
+        <h3>Referências</h3>
+        8696163
       </div>
 
       <div id="art78" style="display: none;">
