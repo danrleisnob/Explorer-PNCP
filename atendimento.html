@@ -18,7 +18,7 @@
 <body>
   <header>
     <div class="logotipo">
-      <a href="./explorer.html">
+      <a href="./index.html">
       <h1>Explorer</h1>
       <h2>PNCP</h2>
       </a>
@@ -50,7 +50,9 @@
           <summary>Atendimento Inicial</summary>
           <ol id="errosList">
             <li><a href="#" onclick="showErrorText('atendimentoinicial')">O usuário está informando ao utilizar nossa API alguma funcionalidade não está funcionado</a></li>
-            <li><a href="#" onclick="showErrorText('credencial')">Antes de subir o chamado você deve se certificar que.</a></li>
+            <li><a href="#" onclick="showErrorText('credencial')">Antes de subir o chamado de solicitação de credencial de produção você deve se certificar que.</a></li>
+            <li><a href="#" onclick="showErrorText('erro')">ERRO ao tentar inserir uma publicação ou no PNCP?</a></li>
+
         </ol>
         </details>
 
@@ -102,6 +104,43 @@
         <h3>Referências</h3>
         5893940</p>
       </div>
+
+              
+      <div id="erro" style="display: none;">
+        <h1>O usuário está informando que está com erro ao tentar fazer algum processo no PNCP</h1>
+        <h2>Situação</h2>
+
+        <p>1 - Podem existir varios erros verifique se o usuário enviou alguma imagem do erro se não? solicite</p>
+        <p>2 - Após a leitura e verificação do erro, caso o mesmo não esteja na no nosso site na página erros Solicite as seguintes informações técnicas</p>
+        • Informações Técnicas da Requisição<br>
+        • IP da Requisição: (o endereço IP do cliente no momento da interação)<br>
+        • URL/URLs Acessadas: (a(s) URL(s) específica(s) acessada(s) pelo cliente)<br>
+        • Método da Requisição: (POST, PUT, PATCH, GET, DELETE, etc.)<br>
+        • JSON Enviado na Requisição: (o corpo da requisição enviada pelo cliente, se aplicável)<br>
+        • JSON de Erro Retornado pela Requisição: (a resposta de erro recebida, se aplicável)<br>
+        • Data e Horário ou Faixa de Horário da Requisição:<br><br>
+
+        <h2>Modelo de Resposta para Chamados</h2>
+
+        <P>Prezado(a),<br>
+          Solicitamos as informações Técnicas da Requisição, essas informações são essenciais para entendermos melhor oque está ocorrendo e te apresentarmos uma solução:<br><br>
+                  • IP da Requisição: (o endereço IP do cliente no momento da interação)<br>
+                  • URL/URLs Acessadas: (a(s) URL(s) específica(s) acessada(s) pelo cliente)<br>
+                  • Método da Requisição: (POST, PUT, PATCH, GET, DELETE, etc.)<br>
+                  • JSON Enviado na Requisição: (o corpo da requisição enviada pelo cliente, se aplicável)<br>
+                  • JSON de Erro Retornado pela Requisição: (a resposta de erro recebida, se aplicável)<br>
+                  • Data e Horário ou Faixa de Horário da Requisição:<br><br>
+          Recomendamos que acompanhe as notícias e atualizações fornecidas no portal do PNCP, no site oficial do Ministério da Gestão e da Inovação em Serviços Públicos - MGI, acessível em (https://www.gov.br/pncp/pt-br) e da nossa FAQ(https://www.gov.br/pncp/pt-br/pncp/perguntas-e-respostas).<br>
+          Atenciosamente,<br>
+          Equipe Suporte PNCP.</P><br>
+
+        <h3>Após envio das informações</h3>
+        <p>Direcione o chamado para o N3 depois que o usuário enviar todas as informações solictadas, caso o mesmo não envie solicite novamente</p>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes N1)<br>
+
+      </div>
       
 
       <div id="credencial" style="display: none;">
@@ -127,8 +166,8 @@
         Inclusão de ao menos uma ata de registro de preço<br>
 
         o quarto teste é:<br>
-        Recomenda-se que sejam utilizados os serviços de retificação da contratação, do resultado e de atas para a realização de um teste mais completo da aplicação. <br> 
-        <img src="./src/img/Screenshot_1.png" alt=""><br>
+        Recomenda-se que sejam utilizados os serviços de retificação da contratação, do resultado e de atas para a realização de um teste mais completo da aplicação. <br> <br>
+        <img src="./src/img/Screenshot_1.png" style="width: 600px;" alt=""><br><br>
 
         Caso o usuário tenha enviado 4 ou 3 links você deverá entrar nos links e verificar se um dos links existe a retificação clicando em historico.<br>
         e o quinto teste é:<br>

@@ -19,7 +19,7 @@
   <header>
     
     <div class="logotipo">
-      <a href="./explorer.html">
+      <a href="./index.html">
       <h1>Explorer</h1>
       <h2>PNCP</h2>
       </a>
@@ -74,25 +74,21 @@
             <li><a href="#" onclick="showErrorText('erroface')">Dúvida Regime Jurídico – PNCP</a></li>
             <li><a href="#" onclick="showErrorText('informativo')">Informativo - PNCP</a></li>
             <li><a href="#" onclick="showErrorText('infraestrutura')">Solicitação de ajuda na infra-estrutura do sistema de terceiros</a></li>
-            <li><a href="#" onclick="showErrorText('acessoproducao')">Solicitação de acesso ambiente de produção –
-                PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('acessoproducao')">Solicitação de acesso ambiente de produção – PNCP</a></li>
             <li><a href="#" onclick="showErrorText('erroCentral')">Código da Contratação Futura - PNCP</a></li>
-            <li><a href="#" onclick="showErrorText('acessonegado')">Dúvida sobre preenchimento de data de encerramento -
-                PNCP</a></li>
-            <li><a href="#" onclick="showErrorText('dispensaeletronica')">Esclarecimento quanto ao Sigilo do Valor
-                Dispensa eletrônica – PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('acessonegado')">Dúvida sobre preenchimento de data de encerramento - PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('dispensaeletronica')">Esclarecimento quanto ao Sigilo do Valor Dispensa eletrônica – PNCP</a></li>
             <li><a href="#" onclick="showErrorText('indeferimento')">Indeferimento – PNCP</a></li>
-            <li><a href="#" onclick="showErrorText('preencherlicitacao')">Indicar como deve ser feita uma licitação –
-                PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('preencherlicitacao')">Indicar como deve ser feita uma licitação – PNCP</a></li>
             <li><a href="#" onclick="showErrorText('maiorlance')">Maior Lance – PNCP</a></li>
-            <li><a href="#" onclick="showErrorText('exoneracao')">Solicitação de acesso em casos de Exoneração –
-                PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('exoneracao')">Solicitação de acesso em casos de Exoneração – PNCP</a></li>
             <li><a href="#" onclick="showErrorText('publicar')">Como publicar no PNCP/Cadastrar - PNCP</a></li>
             <li><a href="#" onclick="showErrorText('nivel4')">Nível 4 do cadastro - PNCP</a></li>
             <li><a href="#" onclick="showErrorText('valortotalhomologado')">Valor total homologado – PNCP</a></li>
             <li><a href="#" onclick="showErrorText('DOU')">A publicação no PNCP substitui a Publicação no DOU – PNCP</a></li>
             <li><a href="#" onclick="showErrorText('art78')">Inativação do Art 78 ou questões sobre</a></li>
             <li><a href="#" onclick="showErrorText('acordodecooperacao')">Publicação de Acordo de Cooperação Técnica no PNCP</a></li>
+            <li><a href="#" onclick="showErrorText('composicao')">Composição do Número de Controle PNCP de PCA/Contratação/Ata/Contrato - PNCP</a></li>
 
 
           </ol>
@@ -1165,7 +1161,6 @@
       </div>
 
       <div id="indeferimento" style="display: none;">
-        <img src="./img/credencial.png">
         <h1>Indeferimento – PNCP</h1>
         <h2>Situação</h2>
 
@@ -1214,6 +1209,108 @@
 
         <h3>Referências</h3>
         3678588</p>
+      </div>
+
+      <div id="composicao" style="display: none;">
+        <h1>Composição do Número de Controle PNCP de PCA/Contratação/Ata/Contrato – PNCP</h1>
+        <h2>Situação</h2>
+
+        <p>O usuário do PNCP deseja saber como seguir alguns números como sequancial e concatenação do ID</p>
+        <h2>Quando Ocorre?</h2>
+
+        <p>obter sequencial</p>
+        <h2>Deve certifica.</h2>
+
+        <p>Se o usário de fato é um desenvolvedor de sistemas/p>
+        <h2>Solução sugerida</h2>
+
+        <p>deve indicar a leitura do manual de integração do PNCP exatamente no item 4.3. Composição do Número de Controle PNCP de PCA/Contratação/Ata/Contrato</p>
+        <h2>Modelo de Resposta para Chamados</h2>
+
+        <P>Prezado(a),<br>
+
+          Aqui está uma explicação simples e direta sobre como obter o número sequencial gerado pelo PNCP para diferentes tipos de registros (Plano de Contratação Anual (PCA), Contratação, Ata de Registro de Preços e Contrato).<br>
+
+          1. Identificador PNCP<br>
+          O PNCP gera automaticamente um número de controle para cada registro. Esse número é utilizado para identificar todas as transações relacionadas ao registro.<br>
+
+          Composição dos Números de Controle<br>
+          Plano de Contratação Anual (PCA)<br>
+          O número de controle do PCA é composto por:<br>
+          
+          • CNPJ do Órgão: 14 dígitos.<br>
+          • Dígito marcador: 0 (indica que é um PCA).<br>
+          • Número sequencial: Gerado pelo PNCP.<br>
+          • Ano do Plano: 4 dígitos.<br>
+          • Exemplo: 99999999999999-0-999999/9999<br>
+          
+          
+          
+          Contratação<br>
+          O número de controle da contratação é composto por:<br>
+          
+          • CNPJ do Órgão: 14 dígitos.<br>
+          • Dígito marcador: 1 (indica que é uma contratação).<br>
+          • Número sequencial: Gerado pelo PNCP.<br>
+          • Ano da Contratação: 4 dígitos.<br>
+          • Exemplo: 99999999999999-1-999999/9999<br>
+          
+          
+          Ata de Registro de Preços<br>
+          • O número de controle da ata é composto por:<br>
+          • Número de Controle PNCP da Contratação: 24 dígitos.<br>
+          • Número sequencial da Ata: Gerado pelo PNCP.<br>
+          • Exemplo: 99999999999999-1-999999/9999-999999<br>
+          
+          Contrato<br>
+          • O número de controle do contrato é composto por:<br>
+          • CNPJ do Órgão: 14 dígitos.<br>
+          • Dígito marcador: 2 (indica que é um contrato).<br>
+          • Número sequencial: Gerado pelo PNCP.<br>
+          • Ano do Contrato: 4 dígitos.<br>
+          • Exemplo: 99999999999999-2-999999/9999<br>
+          • Passo a Passo para Obter o Número Sequencial<br>
+          Inserir o Registro no PNCP:<br>
+          Para cada tipo de registro (PCA, contratação, ata ou contrato), você deve enviar uma requisição ao PNCP usando um endpoint específico.<br>
+          Receber o Número de Controle na Resposta:<br>
+          Quando você envia a requisição para inserir um novo registro, o PNCP retorna um número de controle que inclui o número sequencial.<br>
+          Esse número sequencial é único e é gerado automaticamente pelo sistema.<br>
+          Exemplo Prático<br>
+          Inserir uma Nova Contratação:<br>
+          Faça uma requisição POST ao endpoint específico para contratação.<br>
+          Endpoint: /v1/orgao/{cnpj}/compras/{ano}<br>
+          Exemplo de Requisição cURL:<br>
+          curl -k -X POST \<br>
+          -H Authorization: Bearer access_token \<br>
+          -H Content-Type: application/json \<br>
+          -H Accept: */* \<br>
+          -d @/caminho/para/seu/objeto.json \<br>
+          {BASE_URL}/v1/orgao/{cnpj}/compras/{ano}<br>
+          Obter o Número Sequencial:<br>
+          Na resposta dessa requisição, você receberá um número de controle como 99999999999999-1-999999/9999.<br>
+          O número sequencial é a parte 999999 desse identificador.<br>
+          Resumindo, para obter o número sequencial, você precisa:<br>
+          
+          Inserir o registro (PCA, contratação, ata ou contrato) no PNCP.<br>
+          Receber o número de controle gerado pelo PNCP na resposta da sua requisição.<br>
+          Extrair o número sequencial desse número de controle.<br>
+          Agora, é só seguir esses passos e você conseguirá obter o número sequencial de qualquer registro no PNCP de forma fácil e rápida!<br><br>
+          <img src="./src/img/numero de controle.png" style="width: 400px;" alt=""><br>
+
+          Recomendamos que acompanhe as notícias e atualizações fornecidas no portal do PNCP, no site oficial do Ministério da Gestão e da Inovação em Serviços Públicos - MGI, acessível em (https://www.gov.br/pncp/pt-br) e da nossa FAQ(https://www.gov.br/pncp/pt-br/pncp/perguntas-e-respostas).<br>
+          
+          Atenciosamente,<br>
+          
+          Equipe Suporte PNCP.</P>
+
+        <h3>Atribuições e responsabilidades</h3>
+        (Atendentes)<br>
+
+        <h3>Palavras-chave</h3>
+        Controle | Número | ID | Sequencial<br>
+
+        <h3>Referências</h3>
+        8801485</p>
       </div>
 
       <div id="publicar" style="display: none;">

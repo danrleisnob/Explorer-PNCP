@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -22,8 +23,8 @@ header{
 
 .logotipo h1{
     font-family: "Roboto", sans-serif;
-    font-weight: 1000;
-    font-style: normal;
+    font-weight: 900;
+    font-style: italic;
     color: #0a2653;
 }
 

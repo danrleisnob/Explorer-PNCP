@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loggin from Explorer PNCP</title>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/CSS/lstilo.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="./img/speed.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=League+Spartan&family=Poppins:wght@200;400&display=swap"
+        rel="stylesheet">
+    <script src="./src/JS//main.js"> </script>
+
+</head>
+
+<body>
+    <section class="container">
+        <div class="image-section">
+
+
+            <div class="content-container">
+                <h1 class="section-heading">Aqui está sua Bíblia do
+                    <span> PNCP</span>
+                </h1>
+                <p class="section-paragraph">
+                    <img src="./src/img/logo explorer black1.PNG" alt="background">
+                </p>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-wrapper">
+
+                <div class="logo-container">
+                    <a href="#" class="logo-container">
+                        <img src="./src/img/logo explorer whith1.PNG" alt="logo">
+                    </a>
+                </div>
+
+                <p>Para obter o acesso utilize suas credenciais</p>
+            </div>
+            <!--duvida  -->
+            <div class="input-container">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="senha" required>
+                </div>
+            </div>
+
+            <div class="remember-forgot">
+                <div class="remember-me">
+                    <input type="checkbox" value="remember-me" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+
+                <a href="#"> Forgot Password</a>
+            </div>
+
+            <button class="login-btn" onclick="login()">Log In</button>
+
+            <div class="or-divider">or</div>
+            <a
+                href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Dpt-BR&ec=GAlA8wE&hl=pt-BR&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S1560505066%3A1703099030185334&theme=glif">
+                <button class="google-signin">
+                    <object data="./src/img/7611770.png"></object>
+                    <span>Sign in with Google</span>
+                </button></a>
+        </div>
+    </section>
+    <!-- Balão de mensagem de erro -->
+    <div id="balao-erro" class="balao balao-erro"></div>
+
+    <!-- Balão de mensagem de sucesso -->
+    <div id="balao-sucesso" class="balao balao-sucesso"></div>
+</body>
+
+</html>
