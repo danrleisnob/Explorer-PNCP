@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="./src/CSS/FaqAtendimento.css">
+</head>
+<body>
+    <header>
+        <div class="logotipo">
+          <a href="./index.html">
+          <h1>Explorer</h1>
+          <h2>PNCP</h2>
+          </a>
+        </div>
+    
+          <div class="btn-left">
+              <button>
+                  <a href="./erro.html">Script</a>
+              </button>
+              <button>
+                  <a href="./atendimento.html">Guia de Atendimento</a>
+              </button>
+              <button>
+                <a href="./FaqAtendimento.html">Faq do Atendente</a>
+            </button>
+          </div>
+          <div class="btn-rigth">
+              <button>
+              <a href="http://localhost:8502" target="_blank">Assistente GPT</a>
+              </button>
+          </div>
+      </header>
+
+    <div class="container">
+        <h1>FAQ do Atendente PNCP</h1>
+        <input type="text" id="searchInput" placeholder="Pesquise relacionadas às suas dúvidas">
+        <button id="buttonSearch" onclick="filterFAQs()">Pesquisar</button>
+        <div id="faqContainer">
+            <div class="faq">
+                <h2>Alteração de UASG?</h2>
+                <p>A alteração de UASG é realizada pelo sistema SGA. Ao receber esse tipo de chamado, direcione-o para a estruturante correta.</p>
+            </div>
+            <div class="faq">
+                <h2>Erro ao enviar uma contratação por inexigibilidade para o PNCP?</h2>
+                <p>Geralmente, esse erro ocorre no sistema Compras.gov.br. Verifique no chamado se o usuário adicionou alguma evidência do portal que está utilizando. Se não, peça essa informação. Se o sistema for o Compras.gov.br, direcione o chamado para a estruturante correta.</p>
+            </div>
+            <div class="faq">
+                <h2>Informações erradas no sistema PNCP?</h2>
+                <p>Saiba que a responsabilidade da manutenção e divulgação dos dados é do sistema que o usuário está utilizando. Verifique qual é o sistema do usuário. Se for o Compras.gov.br, direcione para a estruturante correta. Se for um sistema privado, vá até a página "script", onde você encontrará a mensagem para essa situação.</p>
+            </div>
+            <div class="faq">
+                <h2>Informações duplicadas no sistema PNCP?</h2>
+                <p>A responsabilidade da manutenção e divulgação dos dados é do sistema que o usuário está utilizando. Verifique qual é o sistema do usuário. Se for o Compras.gov.br, direcione para a estruturante correta. Se for um sistema privado, vá até a página "script", onde você encontrará a mensagem para essa situação.</p>
+            </div>
+            <div class="faq">
+                <h2>Erro - compra não foi publicada no PNCP</h2>
+                <p>É necessário verificar qual é o sistema que o usuário utiliza para divulgar as informações, pois o sistema é responsável pela manutenção dos dados divulgados no PNCP. Se a publicação não está disponível no PNCP, verifique o sistema. Caso seja o Compras.gov.br, direcione o chamado para a estruturante correta. Se não, solicite que o usuário entre em contato com os desenvolvedores do sistema dele. Se for um desenvolvedor que está entrando em contato, vá até o Guia de Atendimento e solicite as informações técnicas.</p>
+            </div>
+            <div class="faq">
+                <h2>Compra não encontrada</h2>
+                <p>É necessário verificar qual é o sistema que o usuário utiliza para divulgar as informações, pois o sistema é responsável pela manutenção dos dados divulgados no PNCP. Se a publicação não está disponível no PNCP, verifique o sistema. Caso seja o Compras.gov.br, direcione o chamado para a estruturante correta. Se não, solicite que o usuário entre em contato com os desenvolvedores do sistema dele. Se for um desenvolvedor que está entrando em contato, vá até o Guia de Atendimento e solicite as informações técnicas.</p>
+            </div>
+            <div class="faq">
+                <h2>Alteração de razão social ou quaisquer informações relacionadas ao UASG</h2>
+                <p>Direcione o chamado para a estruturante que trata das alterações de UASG.</p>
+            </div>
+            <div class="faq">
+                <h2>Pregão com dois IDs de Contratação</h2>
+                <p>A responsabilidade da manutenção e divulgação dos dados é do sistema que o usuário está utilizando. Verifique qual é o sistema do usuário. Se for o Compras.gov.br, direcione para a estruturante correta. Se for um sistema privado, vá até a página "script", onde você encontrará a mensagem para essa situação.</p>
+            </div>
+            <div class="faq">
+                <h2>Fornecedor não atualizado</h2>
+                <p>É necessário verificar qual é o sistema que o usuário utiliza para divulgar as informações, pois o sistema é responsável pela manutenção dos dados divulgados no PNCP. Se a publicação não está disponível no PNCP, verifique o sistema. Caso seja o Compras.gov.br, direcione o chamado para a estruturante correta. Se não, solicite que o usuário entre em contato com os desenvolvedores do sistema dele. Se for um desenvolvedor que está entrando em contato, vá até o Guia de Atendimento e solicite as informações técnicas.</p>
+            </div>
+            <div class="faq">
+                <h2>Inclusão não permitida pois já existe compra para os parâmetros informados.</h2>
+                <p>É necessário verificar qual é o sistema que o usuário utiliza para divulgar as informações, pois o sistema é responsável pela manutenção dos dados divulgados no PNCP. Se a publicação não está disponível no PNCP, verifique o sistema. Caso seja o Compras.gov.br, direcione o chamado para a estruturante correta. Se não, solicite que o usuário entre em contato com os desenvolvedores do sistema dele. Se for um desenvolvedor que está entrando em contato, vá até o Guia de Atendimento e solicite as informações técnicas.</p>
+            </div>
+            <div class="faq">
+                <h2>Valor Estimado de Compra divergente com o valor Homologado da compra</h2>
+                <p>É necessário verificar qual é o sistema que o usuário utiliza para divulgar as informações, pois o sistema é responsável pela manutenção dos dados divulgados no PNCP. Se a publicação não está disponível no PNCP, verifique o sistema. Caso seja o Compras.gov.br, direcione o chamado para a estruturante correta. Se não, solicite que o usuário entre em contato com os desenvolvedores do sistema dele. Se for um desenvolvedor que está entrando em contato, vá até o Guia de Atendimento e solicite as informações técnicas.</p>
+            </div>
+            <div class="faq">
+                <h2>Planos de Contratação Anual vinculados à CNPJ que não é do nosso Órgão</h2>
+                <p>Em casos de CNPJ divergentes na publicação é necessário verificar se o CNPJ está de acordo com oque o usuário estiver falando se sim é necessário atualizar o CNPJ do usuário no sistema, direcione o chamado para o estruturante que realiza esse tipo de ação</p>
+            </div>
+        </div>
+    </div>
+    <script src="./src/JS/FaqAtendimento.js"></script>
+</body>
+</html>

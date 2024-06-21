@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400; 1.500;1.700;1.900&display=swap');
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 88%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 7rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.logotipo{
+    display: flex;
+}
+
+.logotipo h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: #0a2653;
+    font-size: 2rem;
+}
+
+.logotipo h2{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: black;
+}
+
+.logotipo a{
+    text-decoration: none;
+    display: flex;
+}
+
+header button{
+    font: bold;
+    background: #0a2653;;
+    border: none;
+    padding: 7px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 0;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+header button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+header button a:hover {
+    color: rgb(192, 192, 192); 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: oblique;
+    color: #0a2653;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+}
+
+#buttonSearch {
+    width: 100%;
+    background: #0a2653;;
+    border: none;
+    padding: 7px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 0;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+#buttonSearch:hover{
+    color: rgb(192, 192, 192); 
+}
+
+.faq {
+    margin: 10px 0;
+}
+
+.faq h2 {
+    margin-top: 1rem;
+    font-size: 1.2em;
+}
+
+.faq p {
+    margin: 5px 0 0 0;
+}
